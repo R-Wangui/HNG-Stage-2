@@ -1,0 +1,215 @@
+/* Import font for the company Logo */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+/* Import font for the rest of the application */
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+/* Import font for the prices of the items on the jewellery card */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+/* Import icons from bootstrap-icons */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+body {
+  font-family: "Jost", sans-serif;
+}
+/* Styling for the Navigation bar component */
+#navigationBar {
+  padding: 16px 124px;
+}
+#logo {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+}
+/* #navbarScroll {
+  background-color: red;
+} */
+/* Styling for the part with icons on the Navigation */
+.navigation {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+  font-size: 16px;
+}
+.navHelp {
+  display: inline-flex;
+  gap: 4px;
+}
+.helpNumber {
+  display: flex;
+  flex-direction: column;
+}
+.navigationFlag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.navigationSignup {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+/* Styling for the Navigation Categories component */
+.categories{
+  display: flex;
+  justify-content: space-between;
+  padding: 26px 222px;
+}
+.breadcrumbs {
+  padding: 40px 124px;
+}
+.heroTagline {
+  padding: 0px 124px;
+}
+.filter {
+  padding: 32px 124px;
+}
+/* Styling for the JewelleryCard component */
+.productCard img {
+  margin-bottom: 8px;
+}
+.productDescription p {
+  font-size: 14px;
+}
+.productDescription h5 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 18px;
+  line-height: 1;
+  margin: 8px 0px;
+  padding: 0px;
+}
+/* Styling for the JewelleryCards component */
+.jewelleryCards {
+  display: flex;
+  gap: 16px;
+}
+/* Styling for the Footer component */
+#footer {
+  /* display: inline-flex;
+  justify-content: flex-start;
+  gap: 136px; */
+  background-color: #FAFAFA;
+  position: relative;
+}
+#Vector1 {
+  position: absolute;
+  left: 0; 
+  top: -73.57;
+}
+#Vector3 {
+  display: flex;
+  position: absolute;
+  left: -1200;
+  bottom: 0;
+  /* top: 279; */
+}
+.footerInfomation {
+  padding: 40px;
+  display: inline-flex;
+  gap: 136px;
+  /* background-color: red; */
+  position: absolute;
+  top: 0px;
+  left: 80px;
+}
+#footer a {
+  text-decoration: none;
+  color: black;
+}
+/* .footerLogo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+} */
+ .footerIcons {
+  display: flex;
+  gap: 16px;
+ }
+.footerLinks {
+  display: flex;
+  gap: 80px;
+}
+/* Styling for the ProductDetails component */
+#productDetails {
+  padding: 40px 124px;
+}
+.productDetails {
+  display: flex;
+  gap: 80px;
+}
+.differentAnglesImage {
+  margin-top: 12px;
+}
+.differentAnglesImage2 {
+  margin-left: 12px;
+}
+.productInformation {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.servicePerks ul {
+ list-style: none;
+ padding: 0px;
+ background-color: red;
+}
+/* .servicePerks li {
+  
+} */
+/* Styling for the Similar items sections */
+.similarItems {
+  padding: 98px 124px 84px 124px;
+}
+.similarItems h4 {
+  margin-bottom: 24px;
+  font-size: 28px;
+}
+/* Styling for the checkout */
+.checkoutBreadcrumbs {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  /* gap: 80px; */
+  margin: 24px;
+  background-color: red;
+}
+.checkoutPage {
+  background-color: #FAFAFA;
+  padding: 0px 124px;
+  display: flex;
+  justify-content: space-between;
+  /* gap: 56px; */
+}
+.checkout {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.shipping {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  background-color: #FFFFFF;
+  padding: 8px 0px 24px 0px;
+}
+.orderSummary {
+  background-color: white;
+  padding: 32px;
+}
+.yourOrders {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.order1 {
+  display: inline-flex;
+  gap: 16px;
+}
+.order1Details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.amountToPay {
+  padding-top: 240px;
+}
