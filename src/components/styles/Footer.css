@@ -1,0 +1,48 @@
+/* Styling for the Footer component */
+#footer {
+    /* display: inline-flex;
+    justify-content: flex-start;
+    gap: 136px; */
+    background-color: #FAFAFA;
+    position: relative;
+    width: 100%;
+    display: inline-block;
+  }
+  #vector1 {
+    position: absolute;
+    left: 0; 
+    top: 0;
+  }
+  #vector3 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    /* top: 279; */
+  }
+  .footerInfomation {
+    padding: 40px 124px;
+    /* padding: 40px 0px 40px 104px; */
+    display: flex;
+    gap: 136px;
+    /* background-color: red; */
+    width: 100%;
+  }
+  #footer a {
+    text-decoration: none;
+    color: black;
+  }
+  .footerLogo {
+    font-size: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+   .footerIcons {
+    display: flex;
+    gap: 16px;
+   }
+  .footerLinks {
+    display: flex;
+    gap: 80px;
+  }

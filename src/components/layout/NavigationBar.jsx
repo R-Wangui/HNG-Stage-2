@@ -1,8 +1,6 @@
-import { InputGroup, FormControl } from 'react-bootstrap';
 import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
-import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import '../styles/NavigationBar.css'
 
 
 function NavigationBar() {
@@ -13,32 +11,15 @@ function NavigationBar() {
                 <span style={{color: '#7E9549'}}>Jewel</span>
                 <span style={{color: '#C3AD48'}}>BOX</span>
             </Navbar.Brand>
-            {/* <Navbar.Toggle aria-controls="navbarScroll" /> */}
             <Navbar.Collapse id="navbarScroll">
-                <Nav
-                    className="me-auto my-2 my-lg-0"
-                    style={{ maxHeight: '100px' }}
-                    navbarScroll
-                >   
-                <Form className="d-flex">
-                    <InputGroup>
-                        <Form.Control
-                            type="search"
-                            placeholder="Search JewelBOX"
-                            className="me-2"
-                            aria-label="Search"
-                        /> 
-                        <InputGroup.Text>
-                            <i style={{fontSize: '1.5rem', color: '#7E9549'}} className="bi bi-search"></i>
-                        </InputGroup.Text>
-                    </InputGroup>
-                </Form>
-                
-                </Nav>
+            <div className='searchContainer'>
+                <input type="text" className='searchInput' placeholder="Search JewelBOX" />
+                <i style={{fontSize: '1.5rem', color: '#7E9549'}} className="bi bi-search"></i>
+            </div>
             </Navbar.Collapse>
             <div className='navigation'>
                 <div className='navHelp'>
-                    <i class="bi bi-headset" style={{fontSize: '2rem', color: '#999999'}}></i>
+                    <i class="bi bi-headset" style={{fontSize: '2rem', color: '#999999', backgroundColor: '#F2FAE1'}}></i>
                     <div className='helpNumber'>
                         <span style={{fontSize:'11px'}}>Need some help:</span><span style={{fontSize:'12px', color: 'blue'}}>+234 7087 166803</span>
                     </div>
@@ -59,7 +40,7 @@ function NavigationBar() {
                             </clipPath>
                         </defs>
                     </svg>
-                    <span style={{fontSize:'14px'}}> NGR </span><i class="bi bi-chevron-down" style={{color: '#999999'}}></i>
+                    <span style={{fontSize:'14px'}}> NGR </span>
                 </div>
                 <div className='navigationSignup'>
                     <i class="bi bi-person-circle" style={{fontSize: '2rem', color: '#999999'}}></i>

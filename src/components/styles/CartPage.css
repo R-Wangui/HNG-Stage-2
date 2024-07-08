@@ -1,0 +1,49 @@
+/* Styling CartPage Modal component */
+#cartModal {
+    padding: 32px;
+  }
+  .cartOrderItem {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+  }
+  /* .orderDescription {
+   margin-left: auto;
+  } */
+  /* .orderDescriptionContainer {
+    display: flex;
+  } */
+  .orderName {
+    margin-bottom: 32px;
+  }
+  .orderQuantity {
+    padding: 8px;
+    width: 91px;
+    border: 1px solid #999999;
+  }
+  .orderAmount {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  }
+  .orderTrash {
+    padding: 8px 0px 0px 0px;
+    color: #999999;
+  }
+  .youMayNeed {
+    display: flex;
+    gap: 16px;
+    overflow-y: auto;
+  }
+  .suggestion1 {
+    display: flex;
+    /* flex: 1; */
+    padding-right: 16px;
+    justify-content: space-between;
+    border: 1px solid #999999;
+    /* overflow: hidden; */
+    width: 600px;
+  }
+  .amountToPay {
+    background-color: red;
+  }

@@ -1,4 +1,4 @@
-import React from 'react'
+import '../styles/Footer.css'
 
 function Footer() {
   return (
@@ -11,7 +11,9 @@ function Footer() {
             </div>
             <div className='footerInfomation'>
                 <div className='footerLogo'>
-                    <span id='logo' style={{color: '#7E9549'}}>Jewel</span><span id='logo' style={{color: '#C3AD48'}}>BOX</span>
+                    <span>
+                        <span id='logo' style={{color: '#7E9549'}}>Jewel</span><span id='logo' style={{color: '#C3AD48'}}>BOX</span>
+                    </span>
                     <div className='footerIcons'>
                         <a href="http://" target="_blank" rel="noopener noreferrer">
                             <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -76,25 +78,30 @@ function Footer() {
                 </div>
                 <div>
                     <h6>Change Location</h6>
-                    <i class="bi bi-geo-alt-fill" style={{fontSize: '1.5rem', color: '#999999'}}></i><span> Nigeria  </span><i class="bi bi-chevron-down" style={{color: '#999999'}}></i>   
-                </div>
-                {/* <div id='vector2'>
-                    <svg width="121" height="164" viewBox="0 0 121 164" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path id="Vector 3" d="M115.07 3.01562C62.1985 -20.8709 87.2996 126.171 12.391 161.151C-62.5176 196.131 242.131 190.048 242.131 190.048C242.131 190.048 167.942 26.9021 115.07 3.01562Z" fill="#C3AD48"/>
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="ng">
+                            <g clip-path="url(#clip0_10_24)">
+                                <g id="Group">
+                                    <path id="Vector" fill-rule="evenodd" clip-rule="evenodd" d="M0 0H32V32H0V0Z" fill="white"/>
+                                    <path id="Vector_2" fill-rule="evenodd" clip-rule="evenodd" d="M21.33 0H32V32H21.33V0ZM0 0H10.665V32H0V0Z" fill="#008753"/>
+                                </g>
+                            </g>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_10_24">
+                                <rect width="32" height="32" rx="16" fill="white"/>
+                            </clipPath>
+                        </defs>
                     </svg>
-                </div> */}
+                    <span> Nigeria  </span><i class="bi bi-chevron-down" style={{color: '#999999'}}></i>   
+                </div>
             </div>
-            <div id='vector3'>
+            <div id='vector3' style={{color: '#999999'}}>
                 <svg width="121" height="164" viewBox="0 0 121 164" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path id="Vector 3" d="M115.07 3.01562C62.1985 -20.8709 87.2996 126.171 12.391 161.151C-62.5176 196.131 242.131 190.048 242.131 190.048C242.131 190.048 167.942 26.9021 115.07 3.01562Z" fill="#C3AD48"/>
                 </svg>
             </div>
         </div>
-        {/* <div id='vector2'>
-            <svg width="121" height="164" viewBox="0 0 121 164" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path id="Vector 3" d="M115.07 3.01562C62.1985 -20.8709 87.2996 126.171 12.391 161.151C-62.5176 196.131 242.131 190.048 242.131 190.048C242.131 190.048 167.942 26.9021 115.07 3.01562Z" fill="#C3AD48"/>
-            </svg>
-        </div> */}
     </>
   )
 }

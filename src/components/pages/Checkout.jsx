@@ -1,5 +1,6 @@
 import React from 'react'
 import CheckoutNavigationBar from '../layout/CheckoutNavigationBar'
+import '../styles/Checkout.css'
 import Footer from '../layout/Footer'
 
 
@@ -8,14 +9,16 @@ function Checkout() {
     <>
         <CheckoutNavigationBar />
         <div className='checkoutBreadcrumbs'>
-                <p>1. Shipping</p>
-                <p>2. Delivery</p>
-                <p>3. Payment</p>
+            <p>1. Shipping</p>
+            <p>2. Delivery</p>
+            <p>3. Payment</p>
         </div>
         <div className='checkoutPage'>
             <div className='checkout'>
                 <div className='shipping'>
-                    <span>1. Shipping </span> <span>Edit</span>
+                    <span className='checkoutTitles'>
+                        <span>1. Shipping </span><span>Edit</span>
+                    </span>
                     <div>
                         <div>
                             <span>Name: </span> <span>Chad Bosewick</span>
@@ -27,7 +30,9 @@ function Checkout() {
                     </div>
                 </div>
                 <div className='delivery'>
-                    <span>2. Delivery </span> <span>Edit</span>
+                    <span>
+                        <span>2. Delivery </span> <span>Edit</span>
+                    </span>
                     <p>Shipping Option</p>
                     <div>
                         <span>Express Shipping (2 - 4 Business days)</span><span>FREE</span>
@@ -83,7 +88,6 @@ function Checkout() {
                 </div>
             </div>
         </div>
-        <Footer />
     </>
   )
 }

@@ -1,0 +1,55 @@
+/* Styling for the checkout */
+.checkoutBreadcrumbs {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    /* gap: 80px; */
+    margin: 24px;
+    background-color: red;
+  }
+  .checkoutPage {
+    background-color: #FAFAFA;
+    padding: 0px 124px;
+    display: flex;
+    justify-content: space-between;
+    /* gap: 56px; */
+  }
+  .checkout {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 0px 32px;
+  }
+  .checkoutTitles {
+    display: inline-flex;
+    justify-content: space-between;
+  }
+  .shipping {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    background-color: #FFFFFF;
+    padding: 8px 8px 24px 8px;
+  }
+  .orderSummary {
+    background-color: white;
+    padding: 32px;
+  }
+  .yourOrders {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  .order1 {
+    display: inline-flex;
+    gap: 16px;
+  }
+  .order1Details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .amountToPay {
+    padding-top: 240px;
+  }
+  

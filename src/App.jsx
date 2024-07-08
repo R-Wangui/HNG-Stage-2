@@ -3,13 +3,15 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import ProductListing from './components/pages/ProductListing'
 import ProductDetails from './components/pages/ProductDetails';
 import Checkout from './components/pages/Checkout';
+import CartPage from './components/pages/CartPage';
 
 function App() {
   return (
     <>
       {/* <ProductListing /> */}
       {/* <ProductDetails /> */}
-      <Checkout />
+      <CartPage />
+      {/* <Checkout /> */}
     </>
   )
 }
