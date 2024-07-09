@@ -3,17 +3,22 @@
     display: flex;
     justify-content: center;
     padding: 16px 124px;
+    width: 100%;
+    overflow: hidden;
   }
   #logo {
     font-family: "Josefin Sans", sans-serif;
     font-weight: 700;
     font-size: 32px;
   }
-  .categories {
-    display: inline-flex;
+  #categories {
+    /* display: inline-flex; */
     justify-content: center;
     align-items: center;
-    gap: 32px;
+    /* gap: 16px; */
+  }
+  #categories:hover {
+    color: #7E9549;
   }
   .categories a {
     text-decoration: none;
@@ -22,7 +27,41 @@
   a:hover {
     color: #7E9549;
   }
-
+  /* Styling for search dropdown feature */
+  .searchDropdown {
+    /* background-color: #D7D7D7; */
+    height: 452px;
+    width: 100%;
+    position: relative;
+    
+  }
+  .bi-x-lg {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    cursor: pointer;
+  }
+  .search {
+    padding: 56px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .searchInput {
+    padding: 12px 16px;
+    width: 100%;
+    height: 64px;
+    color: #999999;
+    border: none;
+    border-bottom: 1px solid #999999;
+    margin-bottom: 4px;
+  }
+  .searchLinks a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: #000000;
+  }
   /* Styling for the part with icons on the Navigation */
   .navigation {
     display: flex;
@@ -49,8 +88,31 @@
     gap: 4px;
   }
   @media only screen and (max-width: 768px) {
+    #navigationBar {
+      padding: 40px 8px;
+      position: relative;
+    }
     #logo {
+      font-size: 24px;
+      position: absolute;
+      left: 82px;
+      top: 10px; 
+    }
+    .navbar-toggler {
+      position: absolute;
+      left: 10px; 
+      top: 10px; 
+    }
+    .navigation {
+      gap: 16px;
+      position: absolute;
+      right: 10px; 
+      top: 12px; 
+    }
+    .navigationSignup {
       display: none;
     }
-
+    /* .categories {
+      display: none;
+    } */
   }

@@ -56,12 +56,16 @@
         display: flex;
         flex-direction: column;
         padding: 20px;
+        justify-content: space-between;
     }
     .footerInfomation {
       display: flex;
       flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
       width: 100%;
       gap: 20px;
+      padding: 0px;
     }
     #vector1 {
       display: none;

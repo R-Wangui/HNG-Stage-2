@@ -72,12 +72,9 @@ body {
  padding: 0px;
  background-color: red;
 }
-/* .servicePerks li {
-  
-} */
 /* Styling for the Items you need sections */
 .youNeed {
-  padding: 98px 124px 84px 124px;
+  padding: 28px 124px 84px 124px;
 }
 .youNeedTagline {
   padding: 24px 0px;
@@ -95,8 +92,8 @@ body {
 }
 .itemYouNeed {
   position: relative;
-  width: 184px;
-  height: 298px;
+  /* width: 184px;
+  height: 298px; */
 }
 .itemYouNeedIcon {
   position: absolute;

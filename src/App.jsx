@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ProductListing from './components/pages/ProductListing'
 import Checkout from './components/pages/Checkout';
 import CartPage from './components/pages/CartPage';
+import SearchDropdown from './components/SearchDropdown';
 
 function App() {
   return (
@@ -13,6 +14,8 @@ function App() {
           <Route path="/" element={<ProductListing />} />
           <Route path='/cartpage' element={<CartPage />} />
           <Route path='/checkout' element={<Checkout />} />
+          <Route path='/searchdropdown' element={<SearchDropdown />} />
+
         </Routes>
       </Router>
     </>

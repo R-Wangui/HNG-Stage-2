@@ -4,9 +4,14 @@ import NavigationBar from '../layout/NavigationBar';
 import Footer from '../layout/Footer';
 import ItemsYouNeed from '../layout/ItemsYouNeed';
 import '../styles/ButtonStyles.css'
+import { useNavigate } from 'react-router-dom';
 
 function CartPage() {
     
+    const navigate = useNavigate()
+    const handleClick = () => {
+        navigate('/checkout');
+    }
   return (
     <>
         <NavigationBar />  
@@ -93,7 +98,7 @@ function CartPage() {
                         <u><p>Terms & Conditions Apply</p></u>
                     </div>
                 </div>
-                <Button className='checkoutButton'>CHECKOUT</Button>
+                <Button onClick={handleClick} className='checkoutButton'>CHECKOUT</Button>
             </div>
         </div>
         <ItemsYouNeed />

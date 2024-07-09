@@ -1,5 +1,6 @@
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
+import { Link } from 'react-router-dom';
 
 function CheckoutNavigationBar() {
   return (
@@ -8,8 +9,10 @@ function CheckoutNavigationBar() {
             {/* <i class="bi bi-arrow-left" style={{fontSize: '2rem', color: '#000000'}}>Back</i> */}
             <Container>
                 <div>
-                    <span><i class="bi bi-arrow-left"></i></span>
-                    <span style={{marginLeft: '8px'}}>Back</span>
+                    <Link to="/cartpage" style={{color: 'black', textDecoration: 'none'}} >
+                        <span><i class="bi bi-arrow-left"></i></span>
+                        <span style={{marginLeft: '8px'}}>Back</span>
+                    </Link>
                 </div>
                 <Navbar.Brand href="#" id='logo'>
                     <span style={{color: '#7E9549'}}>Jewel</span>

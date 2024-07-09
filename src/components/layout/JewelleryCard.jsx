@@ -1,8 +1,22 @@
+import { useState } from 'react';
 import { Button } from 'react-bootstrap'
 import '../styles/JewelleryCard.css'
 import '../styles/ButtonStyles.css'
 
 function JewelleryCard() {
+
+  const [buttonText, setButtonText] = useState('ADD');
+  const [buttonColor, setButtonColor] = useState('#000000'); 
+
+  const handleClick = () => {
+    if (buttonText === 'ADD') {
+      setButtonText('ADDED');
+      setButtonColor('#7E9549'); 
+    } else {
+      setButtonText('ADD');
+      setButtonColor('#000000'); 
+    }
+  };
   return (
     <>
       <div className='jewelleryCards'>
@@ -14,7 +28,7 @@ function JewelleryCard() {
               <p>Ragnar Rock Rings ( Gold )</p>
               <h5>₦ 700,000</h5>
             </div>
-            <Button className='productCardButton'>ADD</Button>
+            <Button onClick={handleClick} className={`productCardButton btn-${buttonColor}`}>ADD</Button>
           </div>
         </div>
         <div className='productCard'>

@@ -44,6 +44,9 @@
     width: 100%;
     border: none;
 }
+.checkoutButton:hover {
+    background-color: #7E9549;
+}
 @media only screen and (max-width: 768px) {
     .filterButtons {
         padding: 8px 16px;

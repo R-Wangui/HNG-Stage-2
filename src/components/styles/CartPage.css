@@ -5,21 +5,21 @@
     justify-content: center;
     gap: 16px;
   }
-  .yourBag {
+  /* .yourBag {
     width: auto;
-  }
+  } */
   .yourBagTitle {
-    
     gap: 30px;
   }
   .cartOrderItem {
     display: flex;
+    
     /* justify-content: space-between; */
     gap: 24px;
   }
-  .cartItem1 {
+  /* .cartItem1 {
     background-color: red;
-  }
+  } */
   
   .cartOrderSummary {
     background-color: white;
@@ -28,7 +28,7 @@
   .orderDescription {
    display: flex;
    justify-content: space-between;
-   gap: 80px;
+   gap: 120px;
   }
   .deliveryOffer {
     display: flex;
@@ -82,8 +82,8 @@
       gap: 24px;
       width: auto;
     }
-    .cartOrderItem img {
+    /* .cartOrderItem img {
       width: 132px;
       height: 160;
-    }
+    } */
 }
