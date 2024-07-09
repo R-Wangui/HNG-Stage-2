@@ -83,3 +83,30 @@ body {
   margin-bottom: 24px;
   font-size: 28px;
 }
+.youNeed {
+  padding: 98px 124px 84px 124px;
+}
+.youNeedTagline {
+  padding: 24px 0px;
+  background-color: red;
+}
+.spanLeft {
+  font-size: 24px;
+  
+}
+.itemsYouNeed {
+  padding: 0px 124px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+.itemYouNeed {
+  position: relative;
+  width: 184px;
+  height: 298px;
+}
+.itemYouNeedIcon {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}

@@ -33,3 +33,14 @@
 .productCardButton:hover {
     background-color: #A8C761;
 }
+.promoButton {
+    background-color: #333333; 
+    border: none;
+    height: 44px;
+    border-radius: none;
+}
+.checkoutButton {
+    background-color: #7E9549;
+    width: 100%;
+    border: none;
+}

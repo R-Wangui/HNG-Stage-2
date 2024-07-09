@@ -5,6 +5,13 @@
     justify-content: center;
     gap: 16px;
   }
+  .yourBag {
+    width: auto;
+  }
+  .yourBagTitle {
+    
+    gap: 30px;
+  }
   .cartOrderItem {
     display: flex;
     /* justify-content: space-between; */

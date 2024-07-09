@@ -1,47 +1,9 @@
-// import React from 'react'
-
-// function CartPage() {
-//   return (
-//     <>
-//         <div>
-//             <i class="bi bi-x-lg"></i>
-//             <div>
-//                 <h5>Your Bag</h5>
-//                 <hr />
-//                 <div className='cartOrderItem'>
-//                     <img src="" alt="" />
-//                     <div>
-//                         <div>
-//                             <span>Persian Bubble Ring</span>
-//                             <span>Size 8, Gold Vermeil</span>
-//                         </div>
-//                         <div>
-//                             <i class="bi bi-dash-lg"></i>
-//                             <span>1</span>
-//                             <i class="bi bi-plus-lg"></i>
-//                         </div>
-//                     </div>
-//                     <div>
-//                         <span>₦ 5,599.00</span>
-//                         <div>
-//                             <span>Remove item</span>
-//                             <i class="bi bi-trash"></i>
-//                         </div>
-//                     </div>
-//                 </div>
-//             </div>
-//         </div>
-//     </>
-//   )
-// }
-
-// export default CartPage
 import Button from 'react-bootstrap/Button';
-import Modal from 'react-bootstrap/Modal';
 import '../styles/CartPage.css'
 import NavigationBar from '../layout/NavigationBar';
 import Footer from '../layout/Footer';
 import ItemsYouNeed from '../layout/ItemsYouNeed';
+import '../styles/ButtonStyles.css'
 
 function CartPage() {
     
@@ -50,9 +12,10 @@ function CartPage() {
         <NavigationBar />  
         <div id='cartModal'>
             <div className='yourBag'>
-                <span>
+                <span className='yourBagTitle'>
                     <span>Your Bag </span>
                     <span> 2 items</span>
+                    <hr />
                 </span>
                 <div className='cartOrderItem'>
                     <img src="/Cart Image1.png" alt="Persian Bubble Ring" />
@@ -130,10 +93,9 @@ function CartPage() {
                         <u><p>Terms & Conditions Apply</p></u>
                     </div>
                 </div>
-                <Button>CHECKOUT</Button>
+                <Button className='checkoutButton'>CHECKOUT</Button>
             </div>
         </div>
-        <h5>Items you may need</h5>
         <ItemsYouNeed />
         <Footer />
     </>

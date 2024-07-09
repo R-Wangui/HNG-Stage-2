@@ -36,6 +36,7 @@ body {
     padding: 16px 0px;
     border-bottom: 1px solid #D7D7D7;
   }
+  
   .checkoutCustomerDetails {
     display: flex;
     justify-content: space-between;
@@ -140,5 +141,10 @@ body {
     font-size: 18px;
     font-weight: 500;
     
+  }
+  @media only screen and (max-width: 768px) {
+    body {
+      background-color: lightblue;
+    }
   }
   

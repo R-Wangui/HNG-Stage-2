@@ -1,21 +1,23 @@
 import CheckoutNavigationBar from '../layout/CheckoutNavigationBar'
 import '../styles/Checkout.css'
-import Footer from '../layout/Footer'
-import { Button } from 'react-bootstrap'
+import { Button, Form, InputGroup } from 'react-bootstrap'
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import '../styles/ButtonStyles.css'
 
 
 function Checkout() {
-    const checkoutButton = {
-        backgroundColor: '#7E9549',
-        width: '100%', 
-        border: 'none'
-    }
-    const promoButton = {
-        backgroundColor: '#333333', 
-        border: 'none',
-        height: '44px',
-        borderRadius: 'none'
-    }
+    // const checkoutButton = {
+    //     backgroundColor: '#7E9549',
+    //     width: '100%', 
+    //     border: 'none'
+    // }
+    // const promoButton = {
+    //     backgroundColor: '#333333', 
+    //     border: 'none',
+    //     height: '44px',
+    //     borderRadius: 'none'
+    // }
   return (
     <>
         <CheckoutNavigationBar />
@@ -30,35 +32,42 @@ function Checkout() {
                     <span className='checkoutTitles'>
                         <span>1. Shipping </span><span>Edit</span>
                     </span>
-                    <div className='checkoutCustomerDetails'>
-                        <div className='checkoutName'>
-                            <span>Name: Chad Bosewick</span><span>Chad Bosewick</span>
-                            <span>Email: </span> <span>Addtemi270@gmail.com</span>
-                        </div>
-                        <div className='checkoutCustomerAddress'>
-                            <span>Address: 116, Vibranium Valley Cresecent, Off Local Airport Rd, Ikeja</span>
-                        </div>
-                    </div>
+                    <Form>
+                        <Form.Group className="mb-3" controlId="formGroupEmail">
+                            <Form.Control type="email" placeholder="Enter email" />
+                        </Form.Group>
+                        <Row className="mb-3">
+                            <Form.Group as={Col} controlId="formGridEmail">
+                            <Form.Control type="name" placeholder="First Name" />
+                            </Form.Group>
+                            <Form.Group as={Col} controlId="formGridPassword">
+                            <Form.Control type="Name" placeholder="Last Name" />
+                            </Form.Group>
+                        </Row>
+                        <Form.Group className="mb-3" controlId="formGridAddress1">
+                            <Form.Control placeholder="Address" />
+                        </Form.Group>
+                        <Form.Group className="mb-3" controlId="formGridAddress1">
+                            <Form.Control placeholder="+254 700123456" />
+                        </Form.Group>
+                    </Form>
                 </div>
                 <div className='delivery'>
                     <span className='checkoutTitles'>
                         <span>2. Delivery </span> <span>Edit</span>
                     </span>
                     <p>Shipping Option</p>
+                    <div> 
+                        <span>
+                            <Form.Check inline type="radio" aria-label="radio 1" /> 
+                        </span>
+                        <span> Express Shipping (Delivery in 2-4 business days)</span><span style={{marginLeft: '192px'}}> FREE</span>
+                    </div>
                     <div>
                         <span>
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g id="Radio">
-                                    <mask id="path-1-inside-1_176_1100" fill="white">
-                                    <path d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z"/>
-                                    </mask>
-                                    <path d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z" fill="#999999"/>
-                                    <path d="M12 23C5.92487 23 1 18.0751 1 12H-1C-1 19.1797 4.8203 25 12 25V23ZM23 12C23 18.0751 18.0751 23 12 23V25C19.1797 25 25 19.1797 25 12H23ZM12 1C18.0751 1 23 5.92487 23 12H25C25 4.8203 19.1797 -1 12 -1V1ZM12 -1C4.8203 -1 -1 4.8203 -1 12H1C1 5.92487 5.92487 1 12 1V-1Z" fill="#999999" mask="url(#path-1-inside-1_176_1100)"/>
-                                    <circle id="Radio_2" cx="12" cy="12" r="4" fill="white"/>
-                                </g>
-                            </svg>  
+                            <Form.Check inline type="radio" aria-label="radio 1" /> 
                         </span>
-                        <span> Express Shipping (2 - 4 Business days)</span><span> FREE</span>
+                        <span> Standard Shipping (Delivery in 2 weeks)</span><span style={{marginLeft: '222px'}}> ₦ 18,000</span>
                     </div>
                     <div className='deliveryInstructions'>
                         <p>Delivery Instructions</p>
@@ -69,53 +78,29 @@ function Checkout() {
                     <span className='checkoutTitles'>3. Payment </span>
                     <div className='paymentOptions'>
                         <span className='paymentOption1'>
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g id="Radio">
-                                <mask id="path-1-inside-1_176_1100" fill="white">
-                                <path d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z"/>
-                                </mask>
-                                <path d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z" fill="#999999"/>
-                                <path d="M12 23C5.92487 23 1 18.0751 1 12H-1C-1 19.1797 4.8203 25 12 25V23ZM23 12C23 18.0751 18.0751 23 12 23V25C19.1797 25 25 19.1797 25 12H23ZM12 1C18.0751 1 23 5.92487 23 12H25C25 4.8203 19.1797 -1 12 -1V1ZM12 -1C4.8203 -1 -1 4.8203 -1 12H1C1 5.92487 5.92487 1 12 1V-1Z" fill="#999999" mask="url(#path-1-inside-1_176_1100)"/>
-                                <circle id="Radio_2" cx="12" cy="12" r="4" fill="white"/>
-                                </g>
-                            </svg>
-                            <span> Online Payment</span>
+                            <Form.Check inline type="radio" aria-label="radio 1" />
+                            <span> Credit or Debit card</span>
                         </span>
                         <span className='paymentOption1'>
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g id="Radio">
-                                <mask id="path-1-inside-1_176_1100" fill="white">
-                                <path d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z"/>
-                                </mask>
-                                <path d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z" fill="#999999"/>
-                                <path d="M12 23C5.92487 23 1 18.0751 1 12H-1C-1 19.1797 4.8203 25 12 25V23ZM23 12C23 18.0751 18.0751 23 12 23V25C19.1797 25 25 19.1797 25 12H23ZM12 1C18.0751 1 23 5.92487 23 12H25C25 4.8203 19.1797 -1 12 -1V1ZM12 -1C4.8203 -1 -1 4.8203 -1 12H1C1 5.92487 5.92487 1 12 1V-1Z" fill="#999999" mask="url(#path-1-inside-1_176_1100)"/>
-                                <circle id="Radio_2" cx="12" cy="12" r="4" fill="white"/>
-                                </g>
-                            </svg>
+                            <Form.Check inline type="radio" aria-label="radio 1" />
                             <span> Cash on Delivery</span>
                         </span>
                         <span className='paymentOption1'>
-                            {/* <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g id="Radio">
-                                <mask id="path-1-inside-1_176_1100" fill="white">
-                                <path d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z"/>
-                                </mask>
-                                <path d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z" fill="#999999"/>
-                                <path d="M12 23C5.92487 23 1 18.0751 1 12H-1C-1 19.1797 4.8203 25 12 25V23ZM23 12C23 18.0751 18.0751 23 12 23V25C19.1797 25 25 19.1797 25 12H23ZM12 1C18.0751 1 23 5.92487 23 12H25C25 4.8203 19.1797 -1 12 -1V1ZM12 -1C4.8203 -1 -1 4.8203 -1 12H1C1 5.92487 5.92487 1 12 1V-1Z" fill="#999999" mask="url(#path-1-inside-1_176_1100)"/>
-                                <circle id="Radio_2" cx="12" cy="12" r="4" fill="white"/>
-                                </g>
-                            </svg> */}
-                            <input type="radio" name="" id="" />
-                            <span> Wallet Balance</span>
+                            <Form.Check inline type="radio" aria-label="radio 1" /> 
+                            <span> JewelBOX Wallet Balance</span>
                         </span>
                     </div>
                     <div>
-                        <div className='promoCode'>
-                            <input type="text" placeholder='Add Promo Code' />
-                            <Button style={promoButton} size="lg">Apply</Button>
-                        </div>
+                        <InputGroup className="mb-3">
+                            <Form.Control
+                            placeholder="Add Promo Code"
+                            aria-label="Recipient's username"
+                            aria-describedby="basic-addon2"
+                            />
+                            <Button variant="outline-secondary" id="button-addon2">APPLY</Button>
+                        </InputGroup>
                         <p>By placing this order, you agree to our Terms of Service and understand our Privacy Policy. </p>
-                        <Button style={checkoutButton} size="lg" disabled>Confirm Order</Button>
+                        <Button className='checkoutButton' size="lg" disabled>Confirm Order</Button>
                     </div>
                 </div>
             </div>

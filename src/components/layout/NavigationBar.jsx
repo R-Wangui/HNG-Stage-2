@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import '../styles/NavigationBar.css'
@@ -26,7 +27,9 @@ function NavigationBar() {
                     <i class="bi bi-person-circle" style={{fontSize: '1.5rem'}}></i>
                 </div>
                 <div className='navigationCart'>
-                    <i class="bi bi-handbag-fill" style={{fontSize: '1.5rem', color: '#7E9549'}}></i>
+                    <Link to="/cartpage">
+                        <i class="bi bi-handbag-fill" style={{fontSize: '1.5rem', color: '#7E9549'}}></i>
+                    </Link>
                 </div>
             </div>
         </Container>
