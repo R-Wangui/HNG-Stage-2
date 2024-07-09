@@ -4,7 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 function CheckoutNavigationBar() {
   return (
     <>
-        <Navbar expand="lg" className="bg-body-tertiary" id='navigationBar'>
+        <Navbar expand="lg" className="bg-body-tertiary" id='checkoutNavigationBar'>
             {/* <i class="bi bi-arrow-left" style={{fontSize: '2rem', color: '#000000'}}>Back</i> */}
             <Container>
                 <div>

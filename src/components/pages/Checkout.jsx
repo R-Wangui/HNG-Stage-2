@@ -7,17 +7,18 @@ import '../styles/ButtonStyles.css'
 
 
 function Checkout() {
-    // const checkoutButton = {
-    //     backgroundColor: '#7E9549',
-    //     width: '100%', 
-    //     border: 'none'
-    // }
-    // const promoButton = {
-    //     backgroundColor: '#333333', 
-    //     border: 'none',
-    //     height: '44px',
-    //     borderRadius: 'none'
-    // }
+    const checkoutButton = {
+        backgroundColor: '#7E9549',
+        width: '100%', 
+        border: 'none'
+    }
+    const promoButton = {
+        backgroundColor: '#333333', 
+        color: 'white',
+        border: 'none',
+        height: '44px',
+        borderRadius: 'none'
+    }
   return (
     <>
         <CheckoutNavigationBar />
@@ -61,13 +62,13 @@ function Checkout() {
                         <span>
                             <Form.Check inline type="radio" aria-label="radio 1" /> 
                         </span>
-                        <span> Express Shipping (Delivery in 2-4 business days)</span><span style={{marginLeft: '192px'}}> FREE</span>
+                        <span> Express Shipping (Delivery in 2-4 business days)</span><span className='shoppingOptionMargin1'> FREE</span>
                     </div>
                     <div>
                         <span>
                             <Form.Check inline type="radio" aria-label="radio 1" /> 
                         </span>
-                        <span> Standard Shipping (Delivery in 2 weeks)</span><span style={{marginLeft: '222px'}}> ₦ 18,000</span>
+                        <span> Standard Shipping (Delivery in 2 weeks)</span><span className='shoppingOptionMargin2'> ₦ 18,000</span>
                     </div>
                     <div className='deliveryInstructions'>
                         <p>Delivery Instructions</p>
@@ -97,10 +98,10 @@ function Checkout() {
                             aria-label="Recipient's username"
                             aria-describedby="basic-addon2"
                             />
-                            <Button variant="outline-secondary" id="button-addon2">APPLY</Button>
+                            <Button style={promoButton} variant="outline-secondary" id="button-addon2">APPLY</Button>
                         </InputGroup>
-                        <p>By placing this order, you agree to our Terms of Service and understand our Privacy Policy. </p>
-                        <Button className='checkoutButton' size="lg" disabled>Confirm Order</Button>
+                        <p className='terms'>By placing this order, you agree to our Terms of Service and understand our Privacy Policy. </p>
+                        <Button style={checkoutButton} size="lg" disabled>Confirm Order</Button>
                     </div>
                 </div>
             </div>

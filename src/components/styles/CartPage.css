@@ -73,3 +73,17 @@
   /* .amountToPay {
     background-color: red;
   } */
+  @media only screen and (max-width: 768px) {
+    #cartModal {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 24px;
+      width: auto;
+    }
+    .cartOrderItem img {
+      width: 132px;
+      height: 160;
+    }
+}

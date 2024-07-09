@@ -6,11 +6,10 @@
     gap: 16px;
     padding: 40px 124px 80px 124px;
     overflow: hidden;
-    background-color: rgb(245, 143, 143);
+    /* background-color: rgb(245, 143, 143); */
   }
 .productCard {
     position: relative;
-    background-color: red;
 }
 .productCard img {
     margin-bottom: 8px;
@@ -34,4 +33,21 @@
     line-height: 1;
     margin: 8px 0px;
     padding: 0px;
+}
+@media only screen and (max-width: 768px) {
+    .jewelleryCards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* flex-wrap: wrap; */
+        gap: 24px;
+        padding: 40px;
+        overflow: hidden;
+        /* background-color: rgb(245, 143, 143); */
+    } 
+    .productDescription {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
 }

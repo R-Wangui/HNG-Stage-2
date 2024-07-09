@@ -1,4 +1,11 @@
 /* Styling for the checkout */
+#checkoutNavigationBar {
+  display: flex;
+  justify-content: center;
+  padding: 16px 124px;
+}
+
+
 body {
   background-color: #FAFAFA;
 }
@@ -58,6 +65,12 @@ body {
     background-color: #FFFFFF;
     /* padding: 8px 8px 24px 8px; */
     padding: 32px;
+  }
+  .shoppingOptionMargin1 {
+    margin-left: 192px;
+  }
+  .shoppingOptionMargin2 {
+    margin-left: 222px;
   }
   .delivery {
     display: flex;
@@ -142,9 +155,33 @@ body {
     font-weight: 500;
     
   }
+  .terms {
+    font-size: 16px;
+  }
   @media only screen and (max-width: 768px) {
-    body {
-      background-color: lightblue;
+    #checkoutNavigationBar {
+      padding: 40px;
+    }
+    .checkoutPage {
+      background-color: #FAFAFA;
+      padding: 0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      /* gap: 56px; */
+    }
+    .checkoutBreadcrumbs {
+      display: none;
+    }
+    .shoppingOptionMargin1 {
+      margin-left: 20px;
+    }
+    .shoppingOptionMargin2 {
+      margin-left: 32px;
+    }
+    .terms {
+      font-size: 12px;
     }
   }
+  
   
