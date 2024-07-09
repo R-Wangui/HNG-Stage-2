@@ -1,0 +1,35 @@
+/* Buttons used in the Hero section */
+
+.heroButton {
+    background-color: #A8C761;
+    border: none;
+    color: #FFFFFF;
+    padding: 8px 32px;
+}
+.heroButton:hover {
+    background-color: #7E9549;
+}
+.filterButtons {
+    padding: 8px 16px;
+    background-color: #F2FAE1;
+    color: #000000;
+    border: none;
+}
+.filterButtons:hover {
+    background-color: #A8C761;  
+}
+
+.productCardButton {
+    padding: 8px 16px;
+    background-color: #000000;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 100px;
+    font-size: 12px;
+    position: absolute;
+    right: 0px;
+    top: 8px;
+}
+.productCardButton:hover {
+    background-color: #A8C761;
+}

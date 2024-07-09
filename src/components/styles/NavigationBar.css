@@ -1,5 +1,7 @@
 /* Styling for the Navigation bar component */
-#navigationBar {
+  #navigationBar {
+    display: flex;
+    justify-content: center;
     padding: 16px 124px;
   }
   #logo {
@@ -7,23 +9,25 @@
     font-weight: 700;
     font-size: 32px;
   }
-  .searchInput {
-    padding: 12px;
-    border-radius: 40px;
-    width: 308px;
-    /* position: relative; */
+  .categories {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
   }
-  .bi-search {
-    position: absolute; 
-    left: 10px;
-    top: 50%;
-    background-color: red;
+  .categories a {
+    text-decoration: none;
+    color: #000000;
   }
+  a:hover {
+    color: #7E9549;
+  }
+
   /* Styling for the part with icons on the Navigation */
   .navigation {
     display: flex;
     justify-content: flex-end;
-    gap: 16px;
+    gap: 24px;
     font-size: 16px;
   }
   .navHelp {
@@ -44,18 +48,4 @@
     align-items: center;
     gap: 4px;
   }
-  /* Styling for the Navigation Categories component */
-  .categories{
-    display: flex;
-    justify-content: space-between;
-    padding: 26px 222px;
-  }
-  .breadcrumbs {
-    padding: 40px 124px;
-  }
-  .heroTagline {
-    padding: 0px 124px;
-  }
-  .filter {
-    padding: 32px 124px;
-  }
+  

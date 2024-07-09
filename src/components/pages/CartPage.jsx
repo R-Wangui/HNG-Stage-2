@@ -41,123 +41,100 @@ import Modal from 'react-bootstrap/Modal';
 import '../styles/CartPage.css'
 import NavigationBar from '../layout/NavigationBar';
 import Footer from '../layout/Footer';
+import ItemsYouNeed from '../layout/ItemsYouNeed';
 
 function CartPage() {
     
   return (
     <>
         <NavigationBar />  
-        <div
-        className="modal show"
-        style={{ display: 'block', position: 'initial'}}
-        id='cartModal'
-        >
-        <Modal.Dialog size="lg">
-            <Modal.Header closeButton>
-            <Modal.Title>Your Bag</Modal.Title>
-            </Modal.Header>
-
-            <Modal.Body>
+        <div id='cartModal'>
+            <div className='yourBag'>
+                <span>
+                    <span>Your Bag </span>
+                    <span> 2 items</span>
+                </span>
                 <div className='cartOrderItem'>
                     <img src="/Cart Image1.png" alt="Persian Bubble Ring" />
-                    <div className='orderDescription'>
+                    <div className='cartItem1'>
+                        <div className='orderDescription'>
                             <div className='orderName'>
+                                <span>₦ 150,000.00</span>
+                                <br />
                                 <span>Persian Bubble Ring</span>
                                 <br />
                                 <span>Size 8, Gold Vermeil</span>
                             </div>
+                            <div>
+                                <i class="bi bi-suit-heart"></i>
+                                <span> Save for later</span>
+                            </div>
+                        </div>
+                        <div className='orderAmount'>
                             <div className='orderQuantity'>
                                 <i class="bi bi-dash-lg"></i>
                                 <span> 1 </span>
                                 <i class="bi bi-plus-lg"></i>
                             </div>
-                    </div>
-                    <div className='orderAmount'>
-                            <span style={{fontFamily: '"IBM Plex Sans", sans-serif;', color: '#1C1C1C', fontSize: '24px', fontWeight: '500'}}>₦ 5,599.00</span>
                             <div className='orderTrash'>
                                 <span>Remove item</span>
                                 <i class="bi bi-trash" style={{color: '#999999', marginLeft: '8px'}}></i>
                             </div>
+                        </div>
                     </div>
                 </div>
                 <hr />
                 <div className='cartOrderItem'>
                     <img src="/Cart Image2.png" alt="Persian Bubble Ring" />
-                    <div className='orderDescription'>
-                        <div className='orderName'>
-                            <span>Pearl Dome Ring</span>
-                            <br />
-                            <span>Size 10, Pearl Stone, Gold Vermeil</span>
+                    <div className='cartItem1'>
+                        <div className='orderDescription'>
+                            <div className='orderName'>
+                                <span>₦ 800,000.00</span>
+                                <br />
+                                <span>Set of 3 Gold Rings with Pearl</span>
+                                <br />
+                                <span>Size 10, Pearl Stone Gold Vermeil</span>
+                            </div>
+                            <div>
+                                <i class="bi bi-suit-heart"></i>
+                                <span> Save for later</span>
+                            </div>
                         </div>
-                        <div className='orderQuantity'>
-                            <i class="bi bi-dash-lg"></i>
-                            <span> 1 </span>
-                            <i class="bi bi-plus-lg"></i>
-                        </div>
-                    </div>
-                    <div className='orderAmount'>
-                        <span style={{fontFamily: '"IBM Plex Sans", sans-serif;', color: '#1C1C1C', fontSize: '24px', fontWeight: '500'}}>₦ 65,599.00</span>
-                        <div className='orderTrash'>
-                            <span>Remove item</span>
-                            <i class="bi bi-trash" style={{color: '#999999', marginLeft: '8px'}}></i>
+                        <div className='orderAmount'>
+                            <div className='orderQuantity'>
+                                <i class="bi bi-dash-lg"></i>
+                                <span> 1 </span>
+                                <i class="bi bi-plus-lg"></i>
+                            </div>
+                            <div className='orderTrash'>
+                                <span>Remove item</span>
+                                <i class="bi bi-trash" style={{color: '#999999', marginLeft: '8px'}}></i>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>  
+            <div className='cartOrderSummary'>
+                <h5>Total</h5>
                 <hr />
-                <h5>Items you may need</h5>
-                <div className='youMayNeed'>
-                    <div className='suggestion1'>
-                        <img src="/Cart Image3.png" alt="" />
-                        <div className='orderName'>
-                            <span>Pearl Dome Ring</span>
-                            <br />
-                            <span>Size 10, Pearl Stone, Gold Vermeil</span>
-                        </div>
-                        <div className='orderAmount'>
-                            <span style={{fontFamily: '"IBM Plex Sans", sans-serif;', color: '#1C1C1C', fontSize: '24px', fontWeight: '500'}}>₦ 65,599.00</span>
-                            <div className='orderTrash'>
-                                <Button variant="outline-secondary">
-                                    <i class="bi bi-plus-lg" style={{color: '#999999', marginRight: '8px'}}></i>
-                                    ADD
-                                </Button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='suggestion1'>
-                        <img src="/Cart Image3.png" alt="" />
-                        <div className='orderName'>
-                            <span>Pearl Dome Ring</span>
-                            <br />
-                            <span>Size 10, Pearl Stone, Gold Vermeil</span>
-                        </div>
-                        <div className='orderAmount'>
-                            <span style={{fontFamily: '"IBM Plex Sans", sans-serif;', color: '#1C1C1C', fontSize: '24px', fontWeight: '500'}}>₦ 65,599.00</span>
-                            <div className='orderTrash'>
-                                <Button variant="outline-secondary">
-                                    <i class="bi bi-plus-lg" style={{color: '#999999', marginRight: '8px'}}></i>
-                                    ADD
-                                </Button>
-                            </div>
-                        </div>
+                <span>Sub-total </span><span>₦ 71,598.00</span>
+                <br />
+                <span>Delivery Fee </span><span style={{fontSize: '18px', fontWeight: '400'}}>Free</span>
+                <hr />
+                <br />
+                <div className='deliveryOffer'>
+                    <i class="bi bi-truck" style={{fontSize: '2rem'}}></i>
+                    <div>
+                        <h6>FREE STANDARD DELIVERY</h6>
+                        <p>Offer lasts until the 31st of July</p>
+                        <u><p>Terms & Conditions Apply</p></u>
                     </div>
                 </div>
-                <div className='amountToPay'>
-                    <span style={{fontSize: '18px', fontWeight: '400', marginRight: '132px'}}>Subtotal </span><span style={{fontFamily: '"IBM Plex Sans", sans-serif;', fontSize: '20px', fontWeight: '500'}}>₦ 71,598.00</span>
-                    <br />
-                    <span style={{fontSize: '18px', fontWeight: '400', marginRight: '162px'}}>Shipping Cost </span><span style={{fontSize: '18px', fontWeight: '400'}}>Free</span>
-                    <br />
-                    <span style={{fontSize: '18px', fontWeight: '400', marginRight: '162px'}}>VAT(0.5%)  </span><span style={{fontFamily: '"IBM Plex Sans", sans-serif;', fontSize: '20px', fontWeight: '500'}}>₦ 357.99</span>
-                    <br />
-                    <span style={{fontSize: '18px', fontWeight: '500', marginRight: '132px'}}>Total Cost </span><span style={{fontFamily: '"IBM Plex Sans", sans-serif;', fontSize: '20px', fontWeight: '500'}}>₦ 71,960.00</span>
-                </div>
-                
-            </Modal.Body>
-
-            <Modal.Footer>
-            <Button variant="secondary">Checkout</Button>
-            </Modal.Footer>
-        </Modal.Dialog>
+                <Button>CHECKOUT</Button>
+            </div>
         </div>
+        <h5>Items you may need</h5>
+        <ItemsYouNeed />
         <Footer />
     </>
   );

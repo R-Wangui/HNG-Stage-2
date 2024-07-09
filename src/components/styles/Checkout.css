@@ -1,15 +1,25 @@
 /* Styling for the checkout */
+body {
+  background-color: #FAFAFA;
+}
 .checkoutBreadcrumbs {
     display: flex;
-    /* justify-content: center; */
+    justify-content: space-between;
     align-items: center;
-    /* gap: 80px; */
-    margin: 24px;
-    background-color: red;
+    margin: 24px 259px;
+    /* padding: 0px 256px; */
+    /* background-color: red; */
+  }
+  .checkoutBreadcrumbs span {
+    width: 32px;
+    height: 32px;
+    padding: 4px 12px;
+    border-radius: 100%;
+    background-color: #FFFFFF;
   }
   .checkoutPage {
     background-color: #FAFAFA;
-    padding: 0px 124px;
+    padding: 40px 124px;
     display: flex;
     justify-content: space-between;
     /* gap: 56px; */
@@ -23,17 +33,79 @@
   .checkoutTitles {
     display: inline-flex;
     justify-content: space-between;
+    padding: 16px 0px;
+    border-bottom: 1px solid #D7D7D7;
+  }
+  .checkoutCustomerDetails {
+    display: flex;
+    justify-content: space-between;
+    background-color: red;
+    /* gap: 32px; */
+  }
+  .checkoutName {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+  }
+  .checkoutCustomerAddress {
+    margin-left: 30px;
   }
   .shipping {
     display: flex;
     flex-direction: column;
     gap: 28px;
     background-color: #FFFFFF;
-    padding: 8px 8px 24px 8px;
+    /* padding: 8px 8px 24px 8px; */
+    padding: 32px;
+  }
+  .delivery {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    background-color: #FFFFFF;
+    /* padding: 8px 8px 24px 8px; */
+    padding: 32px;
+  }
+  .deliveryInstructions input {
+    padding: 12px 16px;
+    width: 100%;
+    height: 64px;
+    color: #999999;
+    border: 1px solid #999999;
+  }
+  .payment {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    background-color: #FFFFFF;
+    /* padding: 8px 8px 24px 8px; */
+    padding: 32px;
+    
+  }
+  .paymentOptions {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .paymentOption1 {
+    padding: 12px 16px;
+    background-color: #FAFAFA;
+  }
+  .promoCode {
+    width: 100%;
+    margin: 0px 0px 24px 0px;
+  }
+  .promoCode input {
+    padding: 12px;
+    width: 524px;
+    height: 44px;
+    color: #999999;
+    border: 1px solid #999999;
   }
   .orderSummary {
     background-color: white;
     padding: 32px;
+    height: 688px;
   }
   .yourOrders {
     display: flex;
@@ -51,5 +123,22 @@
   }
   .amountToPay {
     padding-top: 240px;
+  }
+  .amountToPaySpanLeft {
+    font-size: 18px;
+    font-weight: 400; 
+    margin-right: 88px;
+  }
+  .amountToPaySpanRight {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: right;
+  }
+  .order1SpanLeft {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    
   }
   

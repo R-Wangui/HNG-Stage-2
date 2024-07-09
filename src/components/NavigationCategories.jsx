@@ -1,15 +1,12 @@
 import Button from 'react-bootstrap/Button';
+import '../components/styles/ButtonStyles.css'
 
 
 function NavigationCategories() {
-  const filterButtons = {
-    backgroundColor: '#F2FAE1',
-    color: '#000000',
-    border: 'none'
-  }
+  
   return (
     <>
-        <div className='categories'>
+        {/* <div className='categories'>
           <p>SHOP BY:</p>
           <u style={{color: '#7E9549'}}><p>NEW ARRIVALS</p></u>
           <p>EARRINGS</p>
@@ -17,21 +14,25 @@ function NavigationCategories() {
           <p>NECKLACES</p>
           <p>BRACELETS</p>
           <p>MEN'S</p>
-        </div>
-        <div className='breadcrumbs'>
+        </div> */}
+        {/* <div className='breadcrumbs'>
           <span>JewelBOX </span><i class="bi bi-chevron-right" style={{color: '#7E9549'}}></i><span> New Arrivals</span>
-        </div>
-        <div className='heroTagline'>
+        </div> */}
+        <div className='listingTagline'>
           <h3>Checkout our latest New Arrivals</h3>
           <p>Below are our newest products, want something new ?</p>
         </div>
         <div className='filter'>
-          <Button style={filterButtons}>All</Button>{' '}
-          <Button style={filterButtons}>Earrings</Button>{' '}
-          <Button style={filterButtons}>Rings</Button>{' '}
-          <Button style={filterButtons}>Necklaces</Button>{' '}
-          <Button style={filterButtons}>Bracelets</Button>{' '}
-          <span>Sort by: Recommended </span> <i class="bi bi-chevron-down"></i>
+          <div className='filterSelection'>
+            <Button className='filterButtons'>All</Button>{' '}
+            <Button className='filterButtons'>Earrings</Button>{' '}
+            <Button className='filterButtons'>Rings</Button>{' '}
+            <Button className='filterButtons'>Necklaces</Button>{' '}
+            <Button className='filterButtons'>Bracelets</Button>{' '}
+          </div>
+          <div>
+            <span>Sort by: Recommended  </span> <i class="bi bi-chevron-down"></i>
+          </div>
         </div>
     </>
   )

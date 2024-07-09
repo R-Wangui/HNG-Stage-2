@@ -1,0 +1,37 @@
+/* Styling for the JewelleryCard component */
+.jewelleryCards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 40px 124px 80px 124px;
+    overflow: hidden;
+    background-color: rgb(245, 143, 143);
+  }
+.productCard {
+    position: relative;
+    background-color: red;
+}
+.productCard img {
+    margin-bottom: 8px;
+}
+.bi-heart {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    font-size: 24px;
+}
+.productDescription {
+    position: relative;
+
+}
+.productDescription p {
+    font-size: 14px;
+}
+.productDescription h5 {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 18px;
+    line-height: 1;
+    margin: 8px 0px;
+    padding: 0px;
+}

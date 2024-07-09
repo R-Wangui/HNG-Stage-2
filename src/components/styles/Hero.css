@@ -1,0 +1,17 @@
+/* Styling for the hero section */
+.heroSection {
+    position: relative;
+}
+.heroSection img {
+    width: 100%;
+}
+.heroTagline {
+    position: absolute;
+    bottom: 40px;
+    padding: 0px 246px;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+}

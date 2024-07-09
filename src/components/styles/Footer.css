@@ -17,7 +17,6 @@
     position: absolute;
     right: 0;
     bottom: 0;
-    /* top: 279; */
   }
   .footerInfomation {
     padding: 40px 124px;
@@ -45,4 +44,13 @@
   .footerLinks {
     display: flex;
     gap: 80px;
+  }
+  .helpContacts {
+    font-size: 12px;
+    color: #535BEC;
+    display: inline-flex;
+    margin-right: 8px;
+  }
+  .helpIcon {
+    align-items: center;
   }
