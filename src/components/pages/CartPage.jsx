@@ -23,13 +23,16 @@ function CartPage() {
                     <hr />
                 </span>
                 <div className='cartOrderItem'>
-                    <img src="/Cart Image1.png" alt="Persian Bubble Ring" />
+                    <div>
+                        <img src="/Rectangle 1.png" alt="Persian Bubble Ring" />
+                    </div>
+                    
                     <div className='cartItem1'>
                         <div className='orderDescription'>
-                            <span className='orderName'>
-                                <span>₦ 150,000.00</span>
+                            <span className='orderName1'>
+                                <span>₦ 150,000</span>
                                 <br />
-                                <span>Persian Bubble Ring</span>
+                                <span>Persian Bubble Ring </span>
                                 <br />
                                 <span>Size 8, Gold Vermeil</span>
                             </span>
@@ -52,11 +55,13 @@ function CartPage() {
                 </div>
                 <hr />
                 <div className='cartOrderItem'>
-                    <img src="/Cart Image2.png" alt="Persian Bubble Ring" />
+                    <div>
+                        <img src="/Cartimage2.png" alt="Gold Rings" />
+                    </div>
                     <div className='cartItem1'>
                         <div className='orderDescription'>
                             <div className='orderName'>
-                                <span>₦ 800,000.00</span>
+                                <span>₦ 800,000</span>
                                 <br />
                                 <span>Set of 3 Gold Rings with Pearl</span>
                                 <br />

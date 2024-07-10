@@ -27,7 +27,8 @@ function JewelleryCard() {
       <div className='jewelleryCards'>
         <div className='productCard'>
           <img src="/ProductListingImage-1.png" alt="" />
-            <i class="bi bi-heart"></i>
+            <i class="bi bi-heart"
+            ></i>
           <div className='productDescription'>
             <div>
               <p>Ragnar Rock Rings ( Gold )</p>

@@ -35,6 +35,8 @@
     display: flex;
     gap: 24px;
     padding: 40px 44px;
+    background-color: #FAFAFA;
+    margin-bottom: 60px;
   }
 
   /* .orderDescriptionContainer {
@@ -42,7 +44,11 @@
   } */
   .orderName {
     margin-bottom: 32px;
-    min-width: auto;
+    /* background-color: blue; */
+  }
+  .orderName1 {
+    flex-grow: 1;
+    /* background-color: #F40808; */
   }
   .orderQuantity {
     padding: 8px;
@@ -53,10 +59,11 @@
   display: flex;
   justify-content: space-between;
   gap: 32px;
+  /* background-color: aqua; */
   }
   .orderTrash {
     padding: 8px 0px 0px 0px;
-    color: #F40808;
+    /* color: #F40808; */
   }
   .youMayNeed {
     display: flex;

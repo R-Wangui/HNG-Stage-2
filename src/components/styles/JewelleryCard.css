@@ -6,13 +6,32 @@
     gap: 16px;
     padding: 40px 124px 80px 124px;
     overflow: hidden;
-    /* background-color: rgb(245, 143, 143); */
   }
+  /* .jewelleryCards {
+    
+    gap: 16px;
+    padding: 40px 124px 80px 124px;
+    overflow: hidden;
+    background-color: rgb(245, 143, 143);
+  } */
+
 .productCard {
     position: relative;
 }
 .productCard img {
     margin-bottom: 8px;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 0.3s ease;
+  }
+.productCard img:hover {
+    filter: brightness(0.5);
 }
 .bi-heart {
     position: absolute;
@@ -20,9 +39,11 @@
     right: 12px;
     font-size: 24px;
 }
+.bi-heart:hover {
+    color: black;
+}
 .productDescription {
     position: relative;
-
 }
 .productDescription p {
     font-size: 14px;
