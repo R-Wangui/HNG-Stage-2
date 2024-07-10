@@ -55,9 +55,21 @@
   @media only screen and (max-width: 768px) {
     #footer {
         display: flex;
-        flex-direction: column;
+        /* flex-direction: column; */
         padding: 20px;
         justify-content: space-between;
+        height: auto;
+        position: relative;
+        bottom: 180px;
+    }
+    .jewelBOX {
+      display: none;
+    }
+    .footerLogo {
+      font-size: 32px;
+      position: absolute;
+      bottom: -80px;
+      margin-top: 60px;
     }
     .footerInfomation {
       display: flex;
@@ -82,7 +94,7 @@
     }
 
     .footerLinks {
-        display: block;
+        display: inline-block;
         gap: 20px;
     }
 

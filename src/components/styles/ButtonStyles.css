@@ -37,6 +37,17 @@
     right: 0px;
     top: 8px;
 }
+.productCardButton1 {
+    padding: 8px 16px;
+    background-color: #7E9549;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 0px;
+    font-size: 12px;
+    position: absolute;
+    right: 0px;
+    top: 8px;
+}
 .productCardButton:hover {
     background-color: #A8C761;
 }

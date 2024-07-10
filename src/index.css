@@ -116,13 +116,17 @@ body {
   }
   .filter {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
-    padding: 40px;
+    padding: 16px;
     gap: 16px;
+    background-color: aqua;
   }
   .filterSelection {
     display: flex;
+    flex-wrap: wrap;
+    padding: 16px;
     gap: 16px;
   }
   /* Styling for the Items you need sections */
@@ -147,5 +151,8 @@ body {
   .itemYouNeed {
     position: relative;
     width: 184px;
+  }
+  .pagination {
+    margin-bottom: 200px;
   }
 }

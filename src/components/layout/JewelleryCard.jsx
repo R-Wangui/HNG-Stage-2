@@ -73,7 +73,7 @@ function JewelleryCard() {
               <p>Persian Bubble Ring(Gold)</p>
               <h5>₦ 150,000</h5>
             </div>
-            <Button  className='productCardButton'>
+            <Button  className='productCardButton1'>
               ADD
             </Button>
           </div>
@@ -112,7 +112,7 @@ function JewelleryCard() {
               <p>3 Set Gold Rings with Pearl</p>
               <h5>₦ 800,000</h5>
             </div>
-            <Button  className='productCardButton'>
+            <Button  className='productCardButton1'>
               ADD
             </Button>
           </div>

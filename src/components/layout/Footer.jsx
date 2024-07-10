@@ -11,7 +11,7 @@ function Footer() {
             </div>
             <div className='footerInfomation'>
                 <div className='footerLogo'>
-                    <span>
+                    <span className='jewelBOX'>
                         <span id='logo' style={{color: '#7E9549'}}>Jewel</span><span id='logo' style={{color: '#C3AD48'}}>BOX</span>
                     </span>
                     <div className='footerIcons'>

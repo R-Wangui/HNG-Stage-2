@@ -166,7 +166,7 @@ body {
       background-color: #FAFAFA;
       padding: 0px;
       display: flex;
-      flex-direction: column;
+      flex-direction: column-reverse;
       justify-content: center;
       /* gap: 56px; */
     }
@@ -181,6 +181,14 @@ body {
     }
     .terms {
       font-size: 12px;
+    }
+    .shipping {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+      background-color: #FFFFFF;
+      /* padding: 8px 8px 24px 8px; */
+      padding: 32px;
     }
   }
   
