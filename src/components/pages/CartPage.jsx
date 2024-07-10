@@ -26,7 +26,6 @@ function CartPage() {
                     <div>
                         <img src="/Rectangle 1.png" alt="Persian Bubble Ring" />
                     </div>
-                    
                     <div className='cartItem1'>
                         <div className='orderDescription'>
                             <span className='orderName1'>
@@ -67,7 +66,7 @@ function CartPage() {
                                 <br />
                                 <span>Size 10, Pearl Stone Gold Vermeil</span>
                             </div>
-                            <div>
+                            <div className='save'>
                                 <i class="bi bi-suit-heart"></i>
                                 <span> Save for later</span>
                             </div>
