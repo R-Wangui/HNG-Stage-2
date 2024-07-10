@@ -10,13 +10,15 @@ import SearchDropdown from '../SearchDropdown';
 function NavigationBar() {
     const [showOverlay, setShowOverlay] = useState(false);
 
-    const handleOpenOverlay = () => {
-        setShowOverlay(true);
-      };
-    
-      const handleCloseOverlay = () => {
-        setShowOverlay(false);
-      };
+  const handleOpenOverlay = (e) => {
+    e.preventDefault();
+    setShowOverlay(true);
+  };
+
+  const handleCloseOverlay = () => {
+    setShowOverlay(false);
+  };
+  
   return (
     <Navbar expand="lg" className="bg-body-tertiary" id='navigationBar'>
         <Container fluid>
@@ -36,14 +38,12 @@ function NavigationBar() {
                 </Nav>
             </Navbar.Collapse>
             <div className='navigation'>
-                <Link to="/searchdropdown" style={{color: 'black', textDecoration: 'none'}}>
-                    <i onClick={handleOpenOverlay}
-                    style={{ fontSize: '1.5rem' }}
+                <i
+                    onClick={handleOpenOverlay}
+                    style={{ fontSize: '1.5rem', cursor: 'pointer' }}
                     className="bi bi-search"
-                    ></i>
-                </Link>
-                {showOverlay && <SearchDropdown show={showOverlay} onClose={handleCloseOverlay} />}
-                
+                ></i>
+                {showOverlay && <SearchDropdown onClose={handleCloseOverlay} />}
                 <div className='navigationSignup'>
                     <i class="bi bi-person-circle" style={{fontSize: '1.5rem'}}></i>
                 </div>
