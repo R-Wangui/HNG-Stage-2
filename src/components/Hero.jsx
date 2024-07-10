@@ -6,7 +6,7 @@ function Hero() {
     <>
         <div className='heroSection'>
             <div className='heroImage'>
-              <img src="/HeroImage-large.png" alt="" />
+              <img src="/hero-image.jpg" alt="" />
             </div>
             <div className='heroTagline'>
                 <h1>EXCLUSIVE: SHOP THE LATEST NEW TRENDS</h1>
