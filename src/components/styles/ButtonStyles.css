@@ -11,9 +11,16 @@
 }
 .filterButtons {
     padding: 8px 16px;
+    background-color: #FAFAFA;
+    color: #000000;
+    border: none;
+}
+.filterButtons1 {
+    padding: 8px 16px;
     background-color: #F2FAE1;
     color: #000000;
     border: none;
+    border-bottom: 1px solid #7E9549;
 }
 .filterButtons:hover {
     background-color: #A8C761;  

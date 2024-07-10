@@ -29,6 +29,7 @@
    display: flex;
    justify-content: space-between;
    gap: 120px;
+   
   }
   .deliveryOffer {
     display: flex;
@@ -41,6 +42,7 @@
   } */
   .orderName {
     margin-bottom: 32px;
+    min-width: auto;
   }
   .orderQuantity {
     padding: 8px;
@@ -54,7 +56,7 @@
   }
   .orderTrash {
     padding: 8px 0px 0px 0px;
-    color: #999999;
+    color: #F40808;
   }
   .youMayNeed {
     display: flex;

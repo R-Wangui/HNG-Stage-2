@@ -11,21 +11,24 @@
     font-weight: 700;
     font-size: 32px;
   }
-  #categories {
-    /* display: inline-flex; */
+  .me-auto {
+    margin-left: 80px;
+  }
+  .nav-link {
+    display: inline-flex;
     justify-content: center;
-    align-items: center;
+    font-weight: 500;
+    
+    /* align-items: center; */
     /* gap: 16px; */
   }
   #categories:hover {
     color: #7E9549;
   }
-  .categories a {
-    text-decoration: none;
-    color: #000000;
-  }
-  a:hover {
-    color: #7E9549;
+
+  .nav-link:hover {
+    color: #7E9549; /* Color change on hover */
+    text-decoration: underline; /* Underline on hover */
   }
   /* Styling for search dropdown feature */
   .searchDropdown {
@@ -111,6 +114,9 @@
     }
     .navigationSignup {
       display: none;
+    }
+    .me-auto {
+      margin-left: 40px;
     }
     /* .categories {
       display: none;

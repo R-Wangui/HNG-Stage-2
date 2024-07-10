@@ -12,9 +12,6 @@ function SearchDropdown({ onClose }) {
       // size='xl'
     >
       <Modal.Header closeButton>
-        <Modal.Title id="search-dropdown-modal-title">
-          Search
-        </Modal.Title>
       </Modal.Header>
       <Modal.Body>
         <div className='searchDropdown'>

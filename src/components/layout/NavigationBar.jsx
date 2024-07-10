@@ -22,14 +22,14 @@ function NavigationBar() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary" id='navigationBar'>
         <Container fluid>
-            <Navbar.Brand href="#" id='logo'>
+            <Navbar.Brand href="/" id='logo'>
                 <span style={{color: '#7E9549'}}>Jewel</span>
                 <span style={{color: '#C3AD48'}}>BOX</span>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto" id='categories'> 
-                    <Nav.Link href="#home">NEW ARRIVALS</Nav.Link>
+                    <Nav.Link href="#home" style={{ftextDecoration: 'underline' , color: '#7E9549'}}>NEW ARRIVALS</Nav.Link>
                     <Nav.Link href="#home">EARRINGS</Nav.Link>
                     <Nav.Link href="#home">RINGS</Nav.Link>
                     <Nav.Link href="#home">NECKLACES</Nav.Link>
@@ -49,7 +49,8 @@ function NavigationBar() {
                 </div>
                 <div className='navigationCart'>
                     <Link to="/cartpage">
-                        <i class="bi bi-handbag-fill" style={{fontSize: '1.5rem', color: '#7E9549'}}></i>
+                        {/* <i class="bi bi-handbag-fill" style={{fontSize: '1.5rem', color: '#7E9549'}}></i> */}
+                        <img src="/CartIcon.png" alt="" />
                     </Link>
                 </div>
             </div>

@@ -46,7 +46,6 @@ function CartPage() {
                             </div>
                             <div className='orderTrash'>
                                 <span>Remove item</span>
-                                <i class="bi bi-trash" style={{color: '#999999', marginLeft: '8px'}}></i>
                             </div>
                         </div>
                     </div>
@@ -76,7 +75,6 @@ function CartPage() {
                             </div>
                             <div className='orderTrash'>
                                 <span>Remove item</span>
-                                <i class="bi bi-trash" style={{color: '#999999', marginLeft: '8px'}}></i>
                             </div>
                         </div>
                     </div>

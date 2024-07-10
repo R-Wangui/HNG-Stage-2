@@ -4,6 +4,7 @@
     position: relative;
     width: 100%;
     display: inline-block;
+    font-size: 16px;
   }
   #vector1 {
     position: absolute;

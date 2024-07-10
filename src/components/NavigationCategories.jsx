@@ -14,7 +14,7 @@ function NavigationCategories() {
           <div className='filterSelection'>
             <Button className='filterButtons'>All</Button>{' '}
             <Button className='filterButtons'>Earrings</Button>{' '}
-            <Button className='filterButtons'>Rings</Button>{' '}
+            <Button className='filterButtons1'>Rings</Button>{' '}
             <Button className='filterButtons'>Necklaces</Button>{' '}
             <Button className='filterButtons'>Bracelets</Button>{' '}
           </div>
