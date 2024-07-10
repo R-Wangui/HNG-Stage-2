@@ -26,14 +26,14 @@ function CartPage() {
                     <img src="/Cart Image1.png" alt="Persian Bubble Ring" />
                     <div className='cartItem1'>
                         <div className='orderDescription'>
-                            <div className='orderName'>
+                            <span className='orderName'>
                                 <span>₦ 150,000.00</span>
                                 <br />
                                 <span>Persian Bubble Ring</span>
                                 <br />
                                 <span>Size 8, Gold Vermeil</span>
-                            </div>
-                            <div>
+                            </span>
+                            <div className='save'>
                                 <i class="bi bi-suit-heart"></i>
                                 <span> Save for later</span>
                             </div>

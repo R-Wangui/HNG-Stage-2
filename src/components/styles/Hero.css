@@ -6,10 +6,18 @@
 .heroSection {
     position: relative;
 }
-.heroSection img {
+/* .heroSection img {
     width: 100%;
-    /* height: 409px;
-    overflow: hidden; */
+    height: 409px;
+    overflow: hidden;
+    object-position: 50% 0;
+} */
+.heroImage {
+    width: 100%;
+    height: 409px;
+    overflow: hidden;
+    clip: rect(200px, 0px)
+    /* object-position: 0% 50%; */
 }
 .heroTagline {
     position: absolute;
@@ -26,12 +34,14 @@
         position: relative;
     }
     .heroSection img {
-        width: auto;
+        /* width: auto;
         height: auto;
         object-fit: cover;
         align-items: center;
-        display: block;
-        background-image: url('/HeroImage-mobile.png');
+        display: block; */
+        width: 375;
+        height: 480px;
+        background-image: url('/public/HeroImage-large.png');
     }
     
     /* .heroSection img {
@@ -40,7 +50,7 @@
     } */
     .heroTagline {
         position: absolute;
-        bottom: 20px;
+        bottom: 40px;
         padding: 40px;
         color: #FFFFFF;
         /* text-align: center; */

@@ -40,12 +40,15 @@ body {
 /* Styling for the JewelleryCards component */
 
 .pagination {
-  justify-items: center;
   font-size: 14px;
   font-weight: 500;
   text-align: center;
   color: #999999;
+  /* position: relative;
+  padding-left: 600px; */
   padding-bottom: 98px;
+  
+  /* left: 50%; */
 }
 
 /* Styling for the ProductDetails component */
@@ -70,7 +73,6 @@ body {
 .servicePerks ul {
  list-style: none;
  padding: 0px;
- background-color: red;
 }
 /* Styling for the Items you need sections */
 .youNeed {
@@ -78,7 +80,6 @@ body {
 }
 .youNeedTagline {
   padding: 24px 0px;
-  background-color: red;
 }
 .spanLeft {
   font-size: 24px;
@@ -125,27 +126,26 @@ body {
     gap: 16px;
   }
   /* Styling for the Items you need sections */
-.youNeed {
-  padding: 20px;
-}
-.youNeedTagline {
-  padding: 24px 0px;
-  background-color: red;
-}
-.spanLeft {
-  font-size: 24px;
-  
-}
-.itemsYouNeed {
-  padding: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  gap: 16px;
-}
-.itemYouNeed {
-  position: relative;
-  width: 184px;
-}
+  .youNeed {
+    padding: 20px;
+  }
+  .youNeedTagline {
+    padding: 24px 0px;
+  }
+  .spanLeft {
+    font-size: 24px;
+    
+  }
+  .itemsYouNeed {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+  }
+  .itemYouNeed {
+    position: relative;
+    width: 184px;
+  }
 }

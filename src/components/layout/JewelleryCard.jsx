@@ -5,18 +5,23 @@ import '../styles/ButtonStyles.css'
 
 function JewelleryCard() {
 
-  const [buttonText, setButtonText] = useState('ADD');
-  const [buttonColor, setButtonColor] = useState('#000000'); 
+  // const [buttonText, setButtonText] = useState('ADD');
+  // const [buttonColor, setButtonColor] = useState('#000000'); 
 
-  const handleClick = () => {
-    if (buttonText === 'ADD') {
-      setButtonText('ADDED');
-      setButtonColor('#7E9549'); 
-    } else {
-      setButtonText('ADD');
-      setButtonColor('#000000'); 
-    }
-  };
+  // const handleClick = () => {
+  //   if (buttonText === 'ADD') {
+  //     setButtonText('ADDED');
+  //     setButtonColor('success'); // Change to a success color
+  //   } else {
+  //     setButtonText('ADD');
+  //     setButtonColor('primary'); // Revert to the default color
+  //   }
+  // };
+
+  // const handleClick = () => {
+  //     setButtonText('ADDED');
+  //     setButtonColor('#7E9549'); 
+  //   };
   return (
     <>
       <div className='jewelleryCards'>
@@ -28,7 +33,9 @@ function JewelleryCard() {
               <p>Ragnar Rock Rings ( Gold )</p>
               <h5>₦ 700,000</h5>
             </div>
-            <Button onClick={handleClick} className={`productCardButton btn-${buttonColor}`}>ADD</Button>
+            <Button  className='productCardButton'>
+              ADD
+            </Button>
           </div>
         </div>
         <div className='productCard'>
@@ -39,7 +46,9 @@ function JewelleryCard() {
               <p>4 in 1 Set Rings(Gold)</p>
               <h5>₦ 900,000</h5>
             </div>
-            <Button className='productCardButton'>ADD</Button>
+            <Button  className='productCardButton'>
+              ADD
+            </Button>
           </div>
         </div>
         <div className='productCard'>
@@ -50,7 +59,9 @@ function JewelleryCard() {
               <p>Knuckle Rings(Gold)</p>
               <h5>₦ 450,000</h5>
             </div>
-            <Button className='productCardButton'>ADD</Button>
+            <Button  className='productCardButton'>
+              ADD
+            </Button>
           </div>
         </div>
         <div className='productCard'>
@@ -61,7 +72,9 @@ function JewelleryCard() {
               <p>Persian Bubble Ring(Gold)</p>
               <h5>₦ 150,000</h5>
             </div>
-            <Button className='productCardButton'>ADD</Button>
+            <Button  className='productCardButton'>
+              ADD
+            </Button>
           </div>
         </div>
         <div className='productCard'>
@@ -72,7 +85,9 @@ function JewelleryCard() {
               <p>Bishop Band Rings(Gold)</p>
               <h5>₦ 200,000</h5>
             </div>
-            <Button className='productCardButton'>ADD</Button>
+            <Button  className='productCardButton'>
+              ADD
+            </Button>
           </div>
         </div>
         <div className='productCard'>
@@ -83,7 +98,9 @@ function JewelleryCard() {
               <p>Blue Diamond Wedding Ring</p>
               <h5>₦ 1,200,000</h5>
             </div>
-            <Button className='productCardButton'>ADD</Button>
+            <Button  className='productCardButton'>
+              ADD
+            </Button>
           </div>
         </div>
         <div className='productCard'>
@@ -94,7 +111,9 @@ function JewelleryCard() {
               <p>3 Set Gold Rings with Pearl</p>
               <h5>₦ 800,000</h5>
             </div>
-            <Button className='productCardButton'>ADD</Button>
+            <Button  className='productCardButton'>
+              ADD
+            </Button>
           </div>
         </div>
         <div className='productCard'>
@@ -105,7 +124,9 @@ function JewelleryCard() {
               <p>4 Set Gold Rings</p>
               <h5>₦ 250,000</h5>
             </div>
-            <Button className='productCardButton'>ADD</Button>
+            <Button  className='productCardButton'>
+              ADD
+            </Button>
           </div>
         </div>
         <div className='productCard'>
@@ -116,7 +137,9 @@ function JewelleryCard() {
               <p>Ripple Set Ring(Gold)</p>
               <h5>₦ 90,000</h5>
             </div>
-            <Button className='productCardButton'>ADD</Button>
+            <Button  className='productCardButton'>
+              ADD
+            </Button>
           </div>
         </div>
         <div className='productCard'>
@@ -127,7 +150,9 @@ function JewelleryCard() {
               <p>Queen's Cut Diamond Ring</p>
               <h5>₦ 2,500,000</h5>
             </div>
-            <Button className='productCardButton'>ADD</Button>
+            <Button  className='productCardButton'>
+              ADD
+            </Button>
           </div>
         </div>
         <div className='productCard'>
@@ -138,7 +163,9 @@ function JewelleryCard() {
               <p>Set of Pharaoh Rings</p>
               <h5>₦ 600,000</h5>
             </div>
-            <Button className='productCardButton'>ADD</Button>
+            <Button  className='productCardButton'>
+              ADD
+            </Button>
           </div>
         </div>
         <div className='productCard'>
@@ -149,13 +176,15 @@ function JewelleryCard() {
               <p>Pearl Gold Rings</p>
               <h5>₦ 380,000</h5>
             </div>
-            <Button className='productCardButton'>ADD</Button>
+            <Button  className='productCardButton'>
+              ADD
+            </Button>
           </div>
         </div>
       </div>
-      <div className='pagination'>
-        <p>Showing 12 of 12 results</p>
-      </div>
+      
+        <p className='pagination'>Showing 12 of 12 results</p>
+      
     </>
   )
 }

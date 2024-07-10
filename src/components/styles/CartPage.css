@@ -82,8 +82,29 @@
       gap: 24px;
       width: auto;
     }
-    /* .cartOrderItem img {
-      width: 132px;
-      height: 160;
-    } */
+    .orderName {
+      margin-bottom: 12px;
+      font-size: 16px;
+    }
+    .orderName br {
+      display: none;
+    }
+    .cartOrderItem1 {
+      display: flex;
+    }
+    .bi-suit-heart {
+      display: none;
+    }
+    .save span {
+      display: none;
+    }
+    .orderTrash span {
+      display: none;
+    } 
+    .orderQuantity {
+      padding: 8px;
+      width: 80px;
+      height:36px;
+      border: 1px solid #999999;
+    }
 }
