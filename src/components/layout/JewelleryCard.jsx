@@ -3,7 +3,8 @@ import { Button } from 'react-bootstrap'
 import '../styles/JewelleryCard.css'
 import '../styles/ButtonStyles.css'
 
-function JewelleryCard() {
+
+function JewelleryCard(props) {
 
   // const [buttonText, setButtonText] = useState('ADD');
   // const [buttonColor, setButtonColor] = useState('#000000'); 
@@ -31,7 +32,7 @@ function JewelleryCard() {
             ></i>
           <div className='productDescription'>
             <div>
-              <p>Ragnar Rock Rings ( Gold )</p>
+              <p>Ragnar Rock Rings(Gold)</p>
               <h5>₦ 700,000</h5>
             </div>
             <Button  className='productCardButton'>
@@ -183,9 +184,7 @@ function JewelleryCard() {
           </div>
         </div>
       </div>
-      
-        <p className='pagination'>Showing 12 of 12 results</p>
-      
+      <p className='pagination' style={{textAlign:'center'}}>Showing 12 of 12 results</p>
     </>
   )
 }

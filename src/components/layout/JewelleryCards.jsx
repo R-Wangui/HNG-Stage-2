@@ -1,4 +1,4 @@
-import JewelleryCard from '../components/layout/JewelleryCard'
+import JewelleryCard from './JewelleryCard'
 
 function JewelleryCards() {
   return (

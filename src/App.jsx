@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ProductListing from './components/pages/ProductListing'
 import Checkout from './components/pages/Checkout';
 import CartPage from './components/pages/CartPage';
-import SearchDropdown from './components/SearchDropdown';
+import SearchDropdown from './components/layout/SearchDropdown';
 
 function App() {
   return (

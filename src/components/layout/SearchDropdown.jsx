@@ -1,6 +1,6 @@
 import React from 'react';
 import Modal from 'react-bootstrap/Modal';
-import './styles/NavigationBar.css';
+import '../styles/NavigationBar.css';
 
 function SearchDropdown({ onClose }) {
   return (

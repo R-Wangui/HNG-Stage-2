@@ -1,5 +1,5 @@
 import Button from 'react-bootstrap/Button';
-import '../components/styles/ButtonStyles.css'
+import '../styles/ButtonStyles.css'
 
 
 function NavigationCategories() {

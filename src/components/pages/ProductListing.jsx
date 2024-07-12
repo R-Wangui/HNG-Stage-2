@@ -1,7 +1,7 @@
 import NavigationBar from '../layout/NavigationBar'
-import Hero from '../Hero'
-import NavigationCategories from '../NavigationCategories'
-import JewelleryCards from '../JewelleryCards'
+import Hero from '../layout/Hero'
+import NavigationCategories from '../layout/NavigationCategories'
+import JewelleryCards from '../layout/JewelleryCards'
 import Footer from '../layout/Footer'
 
 

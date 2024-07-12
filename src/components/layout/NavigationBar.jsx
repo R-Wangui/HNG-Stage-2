@@ -4,7 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import '../styles/NavigationBar.css'
-import SearchDropdown from '../SearchDropdown';
+import SearchDropdown from '../layout/SearchDropdown';
 
 
 function NavigationBar() {
