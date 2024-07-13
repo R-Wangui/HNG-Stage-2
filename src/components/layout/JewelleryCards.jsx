@@ -16,18 +16,18 @@ function JewelleryCards() {
   const [cart, setCart] = useState([]); 
   const productsPerPage = 12;
   
-  const apiUrl = "http://localhost:5173/api/products?organization_id=4619045cc539400cb5e19f32ca89b878&reverse_sort=true&page=3&size=10&Appid=C4MVEF2CYXJEM9O&Apikey=e826c4ab4dd34acaa7daf4eca506521e20240712181104614655";
+  const apiUrl = "http://localhost:5173/api/products?organization_id=4619045cc539400cb5e19f32ca89b878&Appid=C4MVEF2CYXJEM9O&Apikey=e826c4ab4dd34acaa7daf4eca506521e20240712181104614655";
   
   useEffect(() => {
-    const fetchProducts = async (page) => {
+    const fetchProducts = async () => {
       try {
         const response = await axios.get(apiUrl,
           {
             params: {
               currency_code: "KSH",
               reverse_sort: false,
-              page: 3,
-              size: productsPerPage,
+              page: 2,
+              size: 12,
             },
           }
           
