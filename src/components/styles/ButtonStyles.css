@@ -14,6 +14,10 @@
     background-color: #FAFAFA;
     color: #000000;
     border: none;
+    border-radius: 0px;
+}
+.filterButtons:hover {
+    background-color: #A8C761;  
 }
 .filterButtons1 {
     padding: 8px 16px;
@@ -21,8 +25,9 @@
     color: #000000;
     border: none;
     border-bottom: 1px solid #7E9549;
+    border-radius: 0px;
 }
-.filterButtons:hover {
+.filterButtons1:hover {
     background-color: #A8C761;  
 }
 

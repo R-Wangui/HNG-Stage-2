@@ -1,7 +1,8 @@
 import { Button } from 'react-bootstrap'
 import NavigationBar from '../layout/NavigationBar'
+import ProductDetailsAccordions from '../layout/ProductDetailsAccordions'
 import Footer from '../layout/Footer'
-import JewelleryCards from '../JewelleryCards'
+// import JewelleryCards from '../JewelleryCards'
 
 function ProductDetails() {
     const sizeButton = {
@@ -24,15 +25,6 @@ function ProductDetails() {
   return (
     <>
         <NavigationBar />
-        <div className='categories'>
-            <p>SHOP BY:</p>
-            <u style={{color: '#7E9549'}}><p>NEW ARRIVALS</p></u>
-            <p>EARRINGS</p>
-            <p>RINGS</p>
-            <p>NECKLACES</p>
-            <p>BRACELETS</p>
-            <p>MEN'S</p>
-        </div>
         <div className='breadcrumbs'>
             <span>JewelBOX </span>
             <i class="bi bi-chevron-right" style={{color: '#7E9549'}}></i>
@@ -103,7 +95,8 @@ function ProductDetails() {
                             </li>
                         </ul>
                     </div>
-                    <div className='productDetailsAccordion'>
+                    <ProductDetailsAccordions />
+                    {/* <div className='productDetailsAccordion'>
                         <span style={{fontSize: '16px', fontWeight: '400'}}> What are you Getting? </span>
                         <span style={{marginLeft: '254px'}}>
                             <i class="bi bi-chevron-up"></i>
@@ -125,13 +118,13 @@ function ProductDetails() {
                             layer on persian bubble design of sterling silver. Pair it with daintier rings to create
                             a basic stack.
                         </p>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>
         <div className='similarItems'>
             <h4>Similar items people buy </h4>
-            <JewelleryCards />
+            {/* <JewelleryCards /> */}
         </div>
         <Footer />
     </>

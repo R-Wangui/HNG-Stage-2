@@ -6,6 +6,8 @@
     gap: 16px;
     padding: 40px 124px 80px 124px;
     overflow: hidden;
+    text-decoration: none;
+    color: black;
   }
   /* .jewelleryCards {
     

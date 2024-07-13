@@ -49,8 +49,8 @@ function NavigationBar() {
                 </div>
                 <div className='navigationCart'>
                     <Link to="/cartpage">
-                        {/* <i class="bi bi-handbag-fill" style={{fontSize: '1.5rem', color: '#7E9549'}}></i> */}
-                        <img src="/CartIcon.png" alt="" />
+                        <i class="bi bi-handbag-fill" style={{fontSize: '1.5rem', color: '#7E9549'}}></i>
+                        {/* <img src="/CartIcon.png" alt="" /> */}
                     </Link>
                 </div>
             </div>
