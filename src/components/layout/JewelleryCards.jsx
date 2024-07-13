@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import axios from "axios";
 // import { fetchProducts } from '../../utils/TimbuApi';
-import { Button } from 'react-bootstrap';
+import { Button, Pagination } from 'react-bootstrap';
 import '../styles/JewelleryCard.css'
 import { Link } from 'react-router-dom';
+import PaginationComponent from './PaginationComponent';
 
 function JewelleryCards() {
   
@@ -71,7 +72,7 @@ function JewelleryCards() {
   return (
     <>
       
-      <h1 className='jewelleryCardsH1'>Product List</h1>
+      {/* <h1 className='jewelleryCardsH1'>Product List</h1> */}
       
         <div className='jewelleryCards'>
           {products.map((product) => (
@@ -99,6 +100,7 @@ function JewelleryCards() {
             </div>
           ))}
         </div>
+        <PaginationComponent />
       
 
     </>

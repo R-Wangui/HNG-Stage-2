@@ -1,7 +1,9 @@
+import { Link } from 'react-router-dom'
 import { Button } from 'react-bootstrap'
 import NavigationBar from '../layout/NavigationBar'
 import ProductDetailsAccordions from '../layout/ProductDetailsAccordions'
 import Footer from '../layout/Footer'
+import ItemsYouNeed from '../layout/ItemsYouNeed'
 // import JewelleryCards from '../JewelleryCards'
 
 function ProductDetails() {
@@ -46,7 +48,7 @@ function ProductDetails() {
                 <div className='productInformation'>
                     <div>
                         <h5>Persian Bubble Ring</h5>
-                        <p>₦ 5,599.00</p>
+                        <p>₦ 150,000</p>
                     </div>
                     <div>
                         <span style={{backgroundColor: '#FAFAFA', color: '#000000', padding: '16px 8px'}}>
@@ -125,7 +127,7 @@ function ProductDetails() {
             </div>
         </div>
         <div className='similarItems'>
-            <h4>Similar items people buy </h4>
+            <ItemsYouNeed />
             {/* <JewelleryCards /> */}
         </div>
         <Footer />

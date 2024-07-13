@@ -5,31 +5,32 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import '../styles/NavigationBar.css'
 import SearchDropdown from '../layout/SearchDropdown';
+// import useCart from '../layout/CartContext'
 
-const CartContext = createContext();
+// const CartContext = createContext();
 
-export const useCart = () => useContext(CartContext);
+// export const useCart = () => useContext(CartContext);
 
-function CartProvider({ children }) {
-  const [cartItems, setCartItems] = useState([]);
+// function CartProvider({ children }) {
+//   const [cartItems, setCartItems] = useState([]);
 
-  const addToCart = (item) => {
-    setCartItems([...cartItems, item]);
-  };
+//   const addToCart = (item) => {
+//     setCartItems([...cartItems, item]);
+//   };
 
-  const removeFromCart = (itemId) => {
-    setCartItems(cartItems.filter((item) => item.id !== itemId));
-  };
+//   const removeFromCart = (itemId) => {
+//     setCartItems(cartItems.filter((item) => item.id !== itemId));
+//   };
 
-  return (
-    <CartContext.Provider value={{ cartItems, addToCart, removeFromCart }}>
-      {children}
-    </CartContext.Provider>
-  );
-}
+//   return (
+//     <CartContext.Provider value={{ cartItems, addToCart, removeFromCart }}>
+//       {children}
+//     </CartContext.Provider>
+//   );
+// }
 function NavigationBar() {
 
-    const { cartItems } = useCart();
+    // const { cartItems } = useCart();
 
     const [showOverlay, setShowOverlay] = useState(false);
 
@@ -73,10 +74,10 @@ function NavigationBar() {
                 <div className='navigationCart'>
                     <Link to="/cartpage">
                         <i class="bi bi-handbag-fill" style={{ fontSize: '1.5rem', color: '#7E9549' }}></i>
-                        {/* Display cart item count */}
-                        {cartItems.length > 0 && (
+                        
+                        {/* {cartItems.length > 0 && (
                         <span className="cart-item-count">{cartItems.length}</span>
-                        )}
+                        )} */}
                         {/* <img src="/CartIcon.png" alt="" /> */}
                     </Link>
                 </div>
@@ -87,4 +88,3 @@ function NavigationBar() {
 }
 
 export default NavigationBar;
-export { CartProvider };
