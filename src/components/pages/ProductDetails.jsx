@@ -59,11 +59,11 @@ function ProductDetails() {
                             Limited in Stock
                         </span>
                     </div>
-                    <div>
+                    {/* <div>
                         <Button style={sizeButton}>
                             Choose Size: 8 <i class="bi bi-chevron-down" style={{marginLeft: '8px'}}></i>
                         </Button>
-                    </div>
+                    </div> */}
                     <div>
                         <span style={{marginRight: '20px'}}>Ratings & Reviews </span>
                         <i class="bi bi-star-fill"></i>
@@ -77,11 +77,11 @@ function ProductDetails() {
                         <Link to="/checkout">
                             <Button size="lg" style={addToBagButton}>Add to Bag</Button>
                         </Link>
-                        <span>
+                        {/* <span>
                             <Button size="lg" style={heart40Button}>
                                 <i class="bi bi-suit-heart-fill" style={{color: '#333333'}}></i> 40
                             </Button>
-                        </span>
+                        </span> */}
                     </div>
                     <div className='servicePerks'>
                         <ul>
@@ -100,35 +100,11 @@ function ProductDetails() {
                         </ul>
                     </div>
                     <ProductDetailsAccordions />
-                    {/* <div className='productDetailsAccordion'>
-                        <span style={{fontSize: '16px', fontWeight: '400'}}> What are you Getting? </span>
-                        <span style={{marginLeft: '254px'}}>
-                            <i class="bi bi-chevron-up"></i>
-                        </span>
-                        <ol style={{fontSize: '14px', fontWeight: '300'}}>
-                            <li>Gold vermeil: a thick 16k gold layer on sterling silver.</li>
-                            <li>Band thickness: 4.0 - 12.6mm</li>
-                        </ol>
-                    </div>
-                    <div>
-                        <span style={{fontSize: '16px', fontWeight: '400'}}> 
-                            Description 
-                        </span>
-                        <span style={{marginLeft: '336px'}}>
-                            <i class="bi bi-chevron-up"></i>
-                        </span>
-                        <p style={{fontSize: '14px', fontWeight: '300'}}>This is a classic bold design, but we made it ultra - light so that nothing is weighing
-                            you down ( we wouldn’t want that ). It is handcrafted in vermeil, a thick 16k gold 
-                            layer on persian bubble design of sterling silver. Pair it with daintier rings to create
-                            a basic stack.
-                        </p>
-                    </div> */}
                 </div>
             </div>
         </div>
         <div className='similarItems'>
             <ItemsYouNeed />
-            {/* <JewelleryCards /> */}
         </div>
         <Footer />
     </>

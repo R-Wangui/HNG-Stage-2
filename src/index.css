@@ -49,12 +49,12 @@ body {
   /* background-color: #7E9549; */
 }
 .pagination .page-item .page-link {
-  
   color: #7E9549;
 }
-.custom-pagination .page-item.active .page-link {
+.page-item.active .page-link {
   background-color: #7E9549;
   border-color: #7E9549;
+  color: white;
 }
 /* Styling for the ProductDetails component */
 #productDetails {
