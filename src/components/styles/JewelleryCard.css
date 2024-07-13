@@ -1,4 +1,8 @@
 /* Styling for the JewelleryCard component */
+.jewelleryCardsH1 {
+    text-align: center;
+    font-family: "Jost", sans-serif;
+}
 .jewelleryCards {
     display: flex;
     justify-content: center;
@@ -40,6 +44,8 @@
     top: 12px;
     right: 12px;
     font-size: 24px;
+    text-decoration: none;
+    color: black;
 }
 .bi-heart:hover {
     color: black;
@@ -48,7 +54,10 @@
     position: relative;
 }
 .productDescription p {
+    /* word-break: break-all; */
     font-size: 14px;
+    font-family: "Jost", sans-serif;
+    text-decoration: none;
 }
 .productDescription h5 {
     font-family: "IBM Plex Sans", sans-serif;
@@ -64,7 +73,7 @@
         align-items: center;
         /* flex-wrap: wrap; */
         gap: 24px;
-        padding: 40px;
+        padding: 40px 40px 200px 40px;
         overflow: hidden;
         /* background-color: rgb(245, 143, 143); */
     } 

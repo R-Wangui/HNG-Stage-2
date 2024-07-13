@@ -6,20 +6,29 @@ import ProductDetails from './components/pages/ProductDetails'
 import Checkout from './components/pages/Checkout';
 import CartPage from './components/pages/CartPage';
 import SearchDropdown from './components/layout/SearchDropdown';
+import { useState } from 'react';
+import { CartProvider } from './components/layout/NavigationBar';
 
 function App() {
+  const [cart, setCart] = useState([]);
+
+  const addToCart = (product) => {
+    setCart((prevCart) => [...prevCart, product])
+  }
   return (
     <>
-      <Router>
-        <Routes>
-          <Route path="/" element={<ProductListing />} />
-          <Route path="/productdetails" element={<ProductDetails />} />
-          <Route path='/cartpage' element={<CartPage />} />
-          <Route path='/checkout' element={<Checkout />} />
-          <Route path='/searchdropdown' element={<SearchDropdown />} />
+      <CartProvider>
+        <Router>
+          <Routes>
+            <Route path="/" element={<ProductListing cart={cart} addToCart={addToCart} />} />
+            <Route path="/productdetails" element={<ProductDetails />} />
+            <Route path='/cartpage' element={<CartPage />} />
+            <Route path='/checkout' element={<Checkout />} />
+            <Route path='/searchdropdown' element={<SearchDropdown />} />
 
-        </Routes>
-      </Router>
+          </Routes>
+        </Router>
+      </CartProvider>
     </>
   )
 }

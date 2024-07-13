@@ -1,13 +1,36 @@
+import { createContext, useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import '../styles/NavigationBar.css'
 import SearchDropdown from '../layout/SearchDropdown';
 
+const CartContext = createContext();
 
+export const useCart = () => useContext(CartContext);
+
+function CartProvider({ children }) {
+  const [cartItems, setCartItems] = useState([]);
+
+  const addToCart = (item) => {
+    setCartItems([...cartItems, item]);
+  };
+
+  const removeFromCart = (itemId) => {
+    setCartItems(cartItems.filter((item) => item.id !== itemId));
+  };
+
+  return (
+    <CartContext.Provider value={{ cartItems, addToCart, removeFromCart }}>
+      {children}
+    </CartContext.Provider>
+  );
+}
 function NavigationBar() {
+
+    const { cartItems } = useCart();
+
     const [showOverlay, setShowOverlay] = useState(false);
 
   const handleOpenOverlay = (e) => {
@@ -49,7 +72,11 @@ function NavigationBar() {
                 </div>
                 <div className='navigationCart'>
                     <Link to="/cartpage">
-                        <i class="bi bi-handbag-fill" style={{fontSize: '1.5rem', color: '#7E9549'}}></i>
+                        <i class="bi bi-handbag-fill" style={{ fontSize: '1.5rem', color: '#7E9549' }}></i>
+                        {/* Display cart item count */}
+                        {cartItems.length > 0 && (
+                        <span className="cart-item-count">{cartItems.length}</span>
+                        )}
                         {/* <img src="/CartIcon.png" alt="" /> */}
                     </Link>
                 </div>
@@ -60,3 +87,4 @@ function NavigationBar() {
 }
 
 export default NavigationBar;
+export { CartProvider };

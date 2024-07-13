@@ -72,7 +72,9 @@ function ProductDetails() {
                         <span> 4.9</span>
                     </div>
                     <div>
-                        <Button size="lg" style={addToBagButton}>Add to Bag</Button>
+                        <Link to="/checkout">
+                            <Button size="lg" style={addToBagButton}>Add to Bag</Button>
+                        </Link>
                         <span>
                             <Button size="lg" style={heart40Button}>
                                 <i class="bi bi-suit-heart-fill" style={{color: '#333333'}}></i> 40
