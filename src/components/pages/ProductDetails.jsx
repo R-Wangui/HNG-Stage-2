@@ -14,7 +14,7 @@ function ProductDetails() {
     const [product, setProduct] = useState(null);
     const [loading, setLoading] = useState(true);
 
-    const apiUrl = `https://timbu-get-single-product.reavdev.workers.dev/${id}?organization_id=4619045cc539400cb5e19f32ca89b878&Appid=C4MVEF2CYXJEM9O&Apikey=e826c4ab4dd34acaa7daf4eca506521e20240712181104614655&currency_code=KES`
+    const apiUrl = import.meta.env.VITE_SINGLE_PRODUCT_API
     useEffect(() => {
         const fetchProduct = async () => {
             try {
