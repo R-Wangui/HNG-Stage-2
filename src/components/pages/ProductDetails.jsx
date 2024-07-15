@@ -1,12 +1,42 @@
-import { Link } from 'react-router-dom'
+import axios from'axios'
+import { Link, useParams } from 'react-router-dom'
 import { Button } from 'react-bootstrap'
 import NavigationBar from '../layout/NavigationBar'
 import ProductDetailsAccordions from '../layout/ProductDetailsAccordions'
 import Footer from '../layout/Footer'
 import ItemsYouNeed from '../layout/ItemsYouNeed'
+import { useEffect, useState } from 'react'
 // import JewelleryCards from '../JewelleryCards'
 
 function ProductDetails() {
+    const { id } = useParams();
+    // console.log(id)
+    const [product, setProduct] = useState(null);
+    const [loading, setLoading] = useState(true);
+
+    const apiUrl = `https://timbu-get-single-product.reavdev.workers.dev/${id}?organization_id=4619045cc539400cb5e19f32ca89b878&Appid=C4MVEF2CYXJEM9O&Apikey=e826c4ab4dd34acaa7daf4eca506521e20240712181104614655&currency_code=KES`
+    useEffect(() => {
+        const fetchProduct = async () => {
+            try {
+                const response = await axios.get(apiUrl)
+                setProduct(response.data);
+                console.log(response);
+                setLoading(false);
+            } catch (error) {
+                console.log('Error fetching product:', error);
+                setLoading(false);
+            }
+        };
+        fetchProduct();
+    }, [id]);
+
+    if (loading) {
+        return <div>Loading...</div>
+    }
+    if (!product) {
+        return <div>Product not found</div>
+    }
+
     const sizeButton = {
         backgroundColor: '#000000',
         border: 'none',
@@ -47,8 +77,8 @@ function ProductDetails() {
                 {/* Div with the product details; has nested divs for different information  */}
                 <div className='productInformation'>
                     <div>
-                        <h5>Persian Bubble Ring</h5>
-                        <p>₦ 150,000</p>
+                        <h5>{product.name}</h5>
+                        <p>Ksh. {product.current_price}</p>
                     </div>
                     <div>
                         <span style={{backgroundColor: '#FAFAFA', color: '#000000', padding: '16px 8px'}}>
@@ -59,11 +89,6 @@ function ProductDetails() {
                             Limited in Stock
                         </span>
                     </div>
-                    {/* <div>
-                        <Button style={sizeButton}>
-                            Choose Size: 8 <i class="bi bi-chevron-down" style={{marginLeft: '8px'}}></i>
-                        </Button>
-                    </div> */}
                     <div>
                         <span style={{marginRight: '20px'}}>Ratings & Reviews </span>
                         <i class="bi bi-star-fill"></i>

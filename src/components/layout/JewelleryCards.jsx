@@ -24,7 +24,7 @@ function JewelleryCards() {
         const response = await axios.get(apiUrl,
           {
             params: {
-              currency_code: "KSH",
+              currency_code: "KES",
               reverse_sort: false,
               page: 2,
               size: 12,
@@ -33,7 +33,7 @@ function JewelleryCards() {
           
         );
         
-        // console.log(response)
+        console.log(response)
         if (response.data && Array.isArray(response.data.items)) {
           setProducts(response.data.items);
           setIsEmpty(response.data.items.length === 0);
@@ -94,7 +94,7 @@ function JewelleryCards() {
         <div className='jewelleryCards'>
           {products.map((product) => (
             <div key={product.id} className='productCard'>
-              <Link to="/productdetails">
+              <Link to={"/productdetails/" + product.id} >
                 <div>
                   <img src={`https://api.timbu.cloud/images/${product?.photos[0]?.url}`} alt={product.name} />
                   <i class="bi bi-heart"
@@ -105,8 +105,9 @@ function JewelleryCards() {
                 <div>
                   <p>{product.name}</p>
                   <h5>
-                  {/* {product.current_price[0]['KSH'][0]} */}
-                  {product?.current_price?.KSH ? `${product.current_price[0].KSH[0]} Ksh` : "Price not available"}
+                    {product.current_price[0].KES?.[0]||null}
+                  {/* {product.current_price[0]['KSH'][0]}*/}
+                  {/* {product?.current_price?.KSH ? `${product.current_price[0].KSH[0]} Ksh` : "Price not available"} */}
                   </h5>
                 </div>
                 <Button className='productCardButton' 
