@@ -105,7 +105,7 @@ function JewelleryCards() {
                 <div>
                   <p>{product.name}</p>
                   <h5>
-                    {product.current_price[0].KES?.[0]||null}
+                   Ksh. {product.current_price[0].KES?.[0]||null}
                   {/* {product.current_price[0]['KSH'][0]}*/}
                   {/* {product?.current_price?.KSH ? `${product.current_price[0].KSH[0]} Ksh` : "Price not available"} */}
                   </h5>
