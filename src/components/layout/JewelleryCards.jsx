@@ -61,6 +61,7 @@ function JewelleryCards() {
   const isInCart = (product) => {
     return cart.some((item) => item.id === product.id);
   };
+  // Function for pagination
   const handleNextPage = () => {
     setPage((prevPage) => prevPage + 1);
   };
@@ -69,17 +70,6 @@ function JewelleryCards() {
     setPage((prevPage) => Math.max(prevPage - 1, 1));
   };
 
-
-//   const formatPrice = (currentPrice) => {
-//     if (currentPrice && currentPrice.KSH && currentPrice.KSH[0]) {
-//         return `${currentPrice.KSH[0]} KSH`;
-//     }
-//     return "Price not available";
-// };
-
-  // const priceDisplay = product?.current_price
-  //   ? formatPrice(product.current_price)
-  //   : "Price not available";
 
   // Checks if a product is in the cart
   // const isInCart = (product) => {
@@ -111,7 +101,8 @@ function JewelleryCards() {
                   </h5>
                 </div>
                 <Button className='productCardButton' 
-                  onClick={() => addToCart(product)} disabled={isInCart(product)}
+                  onClick={() => addToCart(product)} 
+                  disabled={isInCart(product)}
                   >
                   {isInCart(product) ? "ADDED" : "ADD"}
                 </Button>   
@@ -119,7 +110,8 @@ function JewelleryCards() {
             </div>
           ))}
         </div>
-        <PaginationComponent />
+        <PaginationComponent 
+        onClick={() => handleNextPage()} />
       
 
     </>

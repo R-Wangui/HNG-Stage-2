@@ -78,7 +78,6 @@ function NavigationBar() {
                         {/* {cartItems.length > 0 && (
                         <span className="cart-item-count">{cartItems.length}</span>
                         )} */}
-                        {/* <img src="/CartIcon.png" alt="" /> */}
                     </Link>
                 </div>
             </div>

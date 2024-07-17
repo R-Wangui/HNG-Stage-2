@@ -8,6 +8,7 @@ import Footer from '../layout/Footer'
 
 
 function ProductListing() {
+ 
   return (
     <>
         <NavigationBar />

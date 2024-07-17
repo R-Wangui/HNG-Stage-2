@@ -90,6 +90,9 @@
     align-items: center;
     gap: 4px;
   }
+  /* .modal {
+    width: 100%;
+  } */
   @media only screen and (max-width: 768px) {
     #navigationBar {
       padding: 40px 8px;
