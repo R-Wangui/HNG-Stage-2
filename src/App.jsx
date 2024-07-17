@@ -6,29 +6,23 @@ import ProductDetails from './components/pages/ProductDetails'
 import Checkout from './components/pages/Checkout';
 import CartPage from './components/pages/CartPage';
 import SearchDropdown from './components/layout/SearchDropdown';
-import { useState } from 'react';
-// import  CartProvider  from './components/layout/CartContext';
+// import { createContext, useContext, useState } from 'react';
+import  CartProvider  from './CartContext';
 
 function App() {
-  const [cart, setCart] = useState([]);
-
-  const addToCart = (product) => {
-    setCart((prevCart) => [...prevCart, product])
-  }
   return (
     <>
-      
+      <CartProvider>
         <Router>
           <Routes>
-            <Route path="/" element={<ProductListing cart={cart} addToCart={addToCart} />} />
+            <Route path="/" element={<ProductListing />} />
             <Route path="/productdetails/:id" element={<ProductDetails />} />
             <Route path="/cartpage" element={<CartPage />} />
             <Route path="/checkout" element={<Checkout />} />
             <Route path="/searchdropdown" element={<SearchDropdown />} />
-
           </Routes>
         </Router>
-      
+      </CartProvider>
     </>
   )
 }

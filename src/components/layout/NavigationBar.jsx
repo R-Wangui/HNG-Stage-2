@@ -5,32 +5,14 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import '../styles/NavigationBar.css'
 import SearchDropdown from '../layout/SearchDropdown';
-// import useCart from '../layout/CartContext'
+import { useCart } from '../../CartContext'
 
-// const CartContext = createContext();
 
-// export const useCart = () => useContext(CartContext);
 
-// function CartProvider({ children }) {
-//   const [cartItems, setCartItems] = useState([]);
-
-//   const addToCart = (item) => {
-//     setCartItems([...cartItems, item]);
-//   };
-
-//   const removeFromCart = (itemId) => {
-//     setCartItems(cartItems.filter((item) => item.id !== itemId));
-//   };
-
-//   return (
-//     <CartContext.Provider value={{ cartItems, addToCart, removeFromCart }}>
-//       {children}
-//     </CartContext.Provider>
-//   );
-// }
 function NavigationBar() {
 
-    // const { cartItems } = useCart();
+    const { cartItems } = useCart();
+    console.log('Cart Items:', cartItems);
 
     const [showOverlay, setShowOverlay] = useState(false);
 
@@ -74,10 +56,9 @@ function NavigationBar() {
                 <div className='navigationCart'>
                     <Link to="/cartpage">
                         <i class="bi bi-handbag-fill" style={{ fontSize: '1.5rem', color: '#7E9549' }}></i>
-                        
-                        {/* {cartItems.length > 0 && (
-                        <span className="cart-item-count">{cartItems.length}</span>
-                        )} */}
+                        {cartItems.length > 0 && (
+                        <span className="cartItemCount">{cartItems.length}</span>
+                        )}
                     </Link>
                 </div>
             </div>

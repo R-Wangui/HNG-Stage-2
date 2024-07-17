@@ -5,15 +5,16 @@ import { Button, Pagination } from 'react-bootstrap';
 import '../styles/JewelleryCard.css'
 import { Link } from 'react-router-dom';
 import PaginationComponent from './PaginationComponent';
+import { useCart } from '../../CartContext';
 
 function JewelleryCards() {
+  const { cartItems, addToCart, removeFromCart } = useCart();
   
   const [products, setProducts] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [isEmpty, setIsEmpty] = useState(false);
   const [isError, setIsError] = useState(false);
   const [page, setPage] = useState(1);
-  const [cart, setCart] = useState([]); 
   const productsPerPage = 12;
   
   const apiUrl = "http://localhost:5173/api/products?organization_id=4619045cc539400cb5e19f32ca89b878&Appid=C4MVEF2CYXJEM9O&Apikey=e826c4ab4dd34acaa7daf4eca506521e20240712181104614655";
@@ -32,8 +33,7 @@ function JewelleryCards() {
           }
           
         );
-        
-        console.log(response)
+        // console.log(response)
         if (response.data && Array.isArray(response.data.items)) {
           setProducts(response.data.items);
           setIsEmpty(response.data.items.length === 0);
@@ -52,15 +52,6 @@ function JewelleryCards() {
     fetchProducts(page);
   }, [page]);
 
-  // Add to cart function
-  const addToCart = (product) => {
-    setCart([...cart, product]); // Add product to cart
-  };
-
-  // Check if a product is in the cart
-  const isInCart = (product) => {
-    return cart.some((item) => item.id === product.id);
-  };
   // Function for pagination
   const handleNextPage = () => {
     setPage((prevPage) => prevPage + 1);
@@ -69,12 +60,15 @@ function JewelleryCards() {
   const handlePreviousPage = () => {
     setPage((prevPage) => Math.max(prevPage - 1, 1));
   };
-
-
+// Function for add to cart
+  const handleAddToCart = (product) => {
+    const newProduct = { id: product.id, name: product.name, price: product.current_price[0].KES[0] };
+    addToCart(newProduct);
+  };
   // Checks if a product is in the cart
-  // const isInCart = (product) => {
-  //   return cart.some((item) => item.id === product.id);
-  // };
+  const isInCart = (product) => {
+    return cartItems.some((item) => item.id === product.id);
+  };
 
   return (
     <>
@@ -101,7 +95,7 @@ function JewelleryCards() {
                   </h5>
                 </div>
                 <Button className='productCardButton' 
-                  onClick={() => addToCart(product)} 
+                  onClick={() => handleAddToCart(product)} 
                   disabled={isInCart(product)}
                   >
                   {isInCart(product) ? "ADDED" : "ADD"}
