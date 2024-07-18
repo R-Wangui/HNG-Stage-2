@@ -15,9 +15,9 @@ function JewelleryCards() {
   const [isEmpty, setIsEmpty] = useState(false);
   const [isError, setIsError] = useState(false);
   const [page, setPage] = useState(1);
-  const productsPerPage = 12;
   
-  const apiUrl = "http://localhost:5173/api/products?organization_id=4619045cc539400cb5e19f32ca89b878&Appid=C4MVEF2CYXJEM9O&Apikey=e826c4ab4dd34acaa7daf4eca506521e20240712181104614655";
+  
+  const apiUrl = import.meta.env.VITE_TIMBU_API;
   
   useEffect(() => {
     const fetchProducts = async () => {

@@ -1,4 +1,4 @@
-import { createContext, useContext, useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
@@ -51,11 +51,11 @@ function NavigationBar() {
                 ></i>
                 {showOverlay && <SearchDropdown onClose={handleCloseOverlay} />}
                 <div className='navigationSignup'>
-                    <i class="bi bi-person-circle" style={{fontSize: '1.5rem'}}></i>
+                    <i className="bi bi-person-circle" style={{fontSize: '1.5rem'}}></i>
                 </div>
                 <div className='navigationCart'>
                     <Link to="/cartpage">
-                        <i class="bi bi-handbag-fill" style={{ fontSize: '1.5rem', color: '#7E9549' }}></i>
+                        <i className="bi bi-handbag-fill" style={{ fontSize: '1.5rem', color: '#7E9549' }}></i>
                         {cartItems.length > 0 && (
                         <span className="cartItemCount">{cartItems.length}</span>
                         )}

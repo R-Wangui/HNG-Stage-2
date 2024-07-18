@@ -5,8 +5,10 @@ import Footer from '../layout/Footer';
 import ItemsYouNeed from '../layout/ItemsYouNeed';
 import '../styles/ButtonStyles.css'
 import { useNavigate } from 'react-router-dom';
+import { useCart } from '../../CartContext';
 
 function CartPage() {
+    const { cartItems, removeFromCart } = useCart();
     
     const navigate = useNavigate()
     const handleClick = () => {
